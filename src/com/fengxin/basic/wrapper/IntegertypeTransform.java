@@ -1,13 +1,10 @@
-package com.fengxin.basic.wrapper;/**
- * @author FENGXIN
- * @data 2024.4.28
- **/
-
+package com.fengxin.basic.wrapper;
 /**
  * @author FENGXIN
- * &#064;data  2024.4.28
+ * @data 2024.4.28
  * 包装类的装箱和拆箱
  **/
+
 public class IntegertypeTransform {
     public static void main(String[] args) {
         //    jdk5以前，手动装、拆箱

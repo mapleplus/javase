@@ -3,10 +3,6 @@ package com.fengxin.basic.wrapper;/**
  * @data 2024.4.28
  **/
 
-/**
- * @author FENGXIN
- * &#064;data  2024.4.28
- **/
 public class wrapperClass {
     Boolean b;
     Character c;

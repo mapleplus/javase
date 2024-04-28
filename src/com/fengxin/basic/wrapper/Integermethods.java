@@ -1,13 +1,10 @@
-package com.fengxin.basic.wrapper;/**
+package com.fengxin.basic.wrapper;
+/**
  * @author FENGXIN
  * @data 2024.4.28
  **/
 
-/**
- * @author FENGXIN
- * &#064;data  2024.4.28
- * 包装类的常用方法
- **/
+// 编写一个Java程序，演示如何使用Integer类的方法。包括获取最大值和最小值、判断是否为数字或字母、判断是否为大写或小写、转换为大写或小写等。
 public class Integermethods {
     public static void main (String[] args) {
         System.out.println ("Integer的最大值："+Integer.MAX_VALUE);// 获取最大值

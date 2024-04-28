@@ -1,13 +1,10 @@
-package com.fengxin.basic.wrapper;/**
+package com.fengxin.basic.wrapper;
+/**
  * @author FENGXIN
  * @data 2024.4.28
  **/
 
-/**
- * @author FENGXIN
- * &#064;data  2024.4.28
- * Integer和String类的相互转换，其他包装类类似
- **/
+// 编写一个Java程序，演示如何将Integer类型转换为String类型，以及如何将String类型转换为Integer类型。
 public class Integer_String {
     public static void main (String[] args) {
         //    Integer 转 String
