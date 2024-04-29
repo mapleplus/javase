@@ -1,4 +1,4 @@
-package com.fengxin.basic.extend.Dynamic;
+package com.fengxin.basic.extend.dynamic;
 
 public class dynamic_binding {
     public static void main(String[] args) {

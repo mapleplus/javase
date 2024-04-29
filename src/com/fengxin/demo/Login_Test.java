@@ -2,7 +2,7 @@ package com.fengxin.demo;
 //登录密码小DEMO
 import java.util.Scanner;
 
-public class Login_test {
+public class Login_Test {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 //        只允许3次

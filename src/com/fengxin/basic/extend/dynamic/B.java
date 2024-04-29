@@ -1,4 +1,4 @@
-package com.fengxin.basic.extend.Dynamic;
+package com.fengxin.basic.extend.dynamic;
 
 public class B extends A {
     public int i = 10;

@@ -1,4 +1,4 @@
-package com.fengxin.myproject.ATM_project;
+package com.fengxin.myproject.atm_project;
 
 import java.util.ArrayList;
 import java.util.Random;
