@@ -1,4 +1,4 @@
-package com.fengxin.basic;
+package com.fengxin.basic.generic;
 
 /**
  * @author FENGXIN

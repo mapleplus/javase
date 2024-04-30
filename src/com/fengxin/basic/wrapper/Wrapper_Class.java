@@ -3,7 +3,7 @@ package com.fengxin.basic.wrapper;/**
  * @data 2024.4.28
  **/
 
-public class wrapperClass {
+public class Wrapper_Class {
     Boolean b;
     Character c;
     Short s;

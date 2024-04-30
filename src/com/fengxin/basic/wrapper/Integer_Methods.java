@@ -5,7 +5,7 @@ package com.fengxin.basic.wrapper;
  **/
 
 // 编写一个Java程序，演示如何使用Integer类的方法。包括获取最大值和最小值、判断是否为数字或字母、判断是否为大写或小写、转换为大写或小写等。
-public class Integermethods {
+public class Integer_Methods {
     public static void main (String[] args) {
         System.out.println ("Integer的最大值："+Integer.MAX_VALUE);// 获取最大值
         System.out.println ("Integer的最小值："+Integer.MIN_VALUE);// 获取最小值

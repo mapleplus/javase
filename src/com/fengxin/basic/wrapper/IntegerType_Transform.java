@@ -5,7 +5,7 @@ package com.fengxin.basic.wrapper;
  * 包装类的装箱和拆箱
  **/
 
-public class IntegertypeTransform {
+public class IntegerType_Transform {
     public static void main(String[] args) {
         //    jdk5以前，手动装、拆箱
         // 手动装箱

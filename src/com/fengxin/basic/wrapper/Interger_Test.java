@@ -30,7 +30,7 @@ package com.fengxin.basic.wrapper;
         return new Integer(i);
     }
 */
-public class Intergertest {
+public class Interger_Test {
     public static void main (String[] args) {
         Integer i1 = new Integer (10);
         Integer i2 = new Integer (10);

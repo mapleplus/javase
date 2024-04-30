@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 //对菜品的操作
-public class MenuOperator {
+public class Menu_Operator {
     private ArrayList<Menu> menus = new ArrayList<>();
 //    1.上架菜品
-    public MenuOperator() {}
+    public Menu_Operator () {}
     public void addMenu() {
         Menu menu = new Menu();
         Scanner sc = new Scanner(System.in);

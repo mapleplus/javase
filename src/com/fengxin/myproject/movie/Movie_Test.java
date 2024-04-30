@@ -2,7 +2,7 @@ package com.fengxin.myproject.movie;
 
 import java.util.Scanner;
 
-public class TEST {
+public class Movie_Test {
     public static void main(String[] args) {
 //        设置电影
         Movie[] movies =new Movie[4];
@@ -10,7 +10,7 @@ public class TEST {
         movies[1] =new Movie(2,"出拳吧",39,"田雨","3.5万人想看") ;
         movies[2]=new Movie(3,"月球陨落",42,"贝瑞","10.8万人想看") ;
         movies[3] =new Movie(4,"一点就到家",38.9,"刘昊然","13万人想看") ;
-        MovieOperator operator = new MovieOperator(movies);
+        Movie_Operator operator = new Movie_Operator (movies);
         operator.PrintAllMovies();
         int id;
 //        operator.PrintAllMovies();

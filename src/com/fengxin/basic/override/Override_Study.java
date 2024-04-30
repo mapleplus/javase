@@ -4,7 +4,7 @@ package com.fengxin.basic.override;
  * @author xjn
  * 理解重写及super的注意事项
  */
-public class override_study {
+public class Override_Study {
     public static void main(String[] args) {
         Person per = new Person("tom",18);
         System.out.println(per.message());

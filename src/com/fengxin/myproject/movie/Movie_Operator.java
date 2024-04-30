@@ -1,11 +1,11 @@
 package com.fengxin.myproject.movie;
 
-public class MovieOperator {
+public class Movie_Operator {
     private Movie[] movies;
-    public MovieOperator(){
+    public Movie_Operator (){
 
     }
-    public MovieOperator(Movie[] movies) {
+    public Movie_Operator (Movie[] movies) {
         this.movies = movies;
     }
     public void PrintAllMovies(){
