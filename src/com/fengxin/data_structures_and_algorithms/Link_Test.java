@@ -4,16 +4,29 @@ package com.fengxin.data_structures_and_algorithms;
  * @author FENGXIN
  * @data 2024.4.29
  * 单链表的实现
+ * 说明：指定位置的操作时，以头结点head为起始结点，for循环中索引 (i < index - 1) 即为指定位置的前一个位置
+ * (i < index) 即为指定位置
  **/
 public class Link_Test {
     public static void main (String[] args) {
         LinkedList<Integer> linkedList = new LinkedList<> ();
-        linkedList.addFirst (1);
-        linkedList.addFirst (2);
-        linkedList.addFirst (3);
-        linkedList.addFirst (4);
         linkedList.addFirst (5);
+        linkedList.addFirst (4);
+        linkedList.addFirst (3);
+        linkedList.addFirst (2);
+        linkedList.addFirst (1);
         linkedList.printLinkedList ();
+        System.out.println ();
+        linkedList.add (3,6);
+        linkedList.printLinkedList ();
+        System.out.println ();
+        linkedList.remove (3);
+        linkedList.printLinkedList ();
+        System.out.println ();
+        System.out.println (linkedList.get (3));
+        linkedList.set (3,7);
+        linkedList.printLinkedList ();
+        System.out.println ();
     }
 }
 // 单链表类
@@ -44,7 +57,7 @@ class LinkedList<E> {
         Node<E> newNode = new Node<>(value);
         newNode.next = head.next;
         head.next = newNode;
-    //如果添加之前链表为空，则更新尾节点
+        //如果添加之前链表为空，头尾结点是相等的地址，则需要更新尾节点指向新节点
         if (tail == head) {
             tail = newNode;
         }
@@ -62,14 +75,14 @@ class LinkedList<E> {
         if (index < 0 || index > size) {
             throw new IllegalArgumentException("索引超出范围");
         }
-    //如果索引等于链表长度，则直接添加到链表尾部
+        //如果索引等于链表长度，则直接添加到链表尾部
         if(index == size){
             addLast(value);
         }
         Node<E> newNode = new Node<>(value);
+        //移动到指定位置的前一个位置
         Node<E> prev = head;
-    //移动到指定位置的前一个位置
-        for (int i = 0 ; i < index ; i++) {
+        for (int i = 0 ; i < index - 1; i++) {
             prev = prev.next;
         }
         newNode.next = prev.next;
@@ -78,14 +91,14 @@ class LinkedList<E> {
     }
 //    删除链表头部元素
     public E removeFirst() {
-    //如果链表为空，则抛出异常
+        //如果链表为空，则抛出异常
         if (head.next == null) {
             throw new IllegalArgumentException("链表为空");
         }
         Node<E> first = head.next;
         head.next = first.next;
         first.next = null;
-    //如果删除后链表为空，则更新尾节点
+        //如果删除后链表为空，则更新尾节点
         if(size == 1)
         {
             final boolean b = tail == head;
@@ -124,7 +137,7 @@ class LinkedList<E> {
         }
         //移动到指定位置的前一个位置
         Node<E> prev = head;
-        for (int i = 0 ; i < index ; i++) {
+        for (int i = 0 ; i < index - 1; i++) {
             prev = prev.next;
         }
         Node<E> toRemove = prev.next;
@@ -165,7 +178,7 @@ class LinkedList<E> {
         }
         //移动到指定位置
         Node<E> getNode = head;
-        for (int i = 0 ; i < index + 1 ; i++) {
+        for (int i = 0 ; i < index ; i++) {
             getNode = getNode.next;
         }
         return getNode.value;
@@ -186,7 +199,7 @@ class LinkedList<E> {
         }
         //移动到指定位置
         Node<E> setNode = head;
-        for (int i = 0 ; i < index + 1 ; i++){
+        for (int i = 0 ; i < index ; i++){
             setNode = setNode.next;
         }
         setNode.value = value;
