@@ -37,6 +37,7 @@ public class Arrays_Methods {
         // 使用Arrays.fill方法填充数组
         Arrays.fill (intArray, 0, 3, 10);
         System.out.println("intArray after fill: " + Arrays.toString(intArray));
+        // 或者
         Arrays.fill (intArray, 10);
         System.out.println("intArray after fill: " + Arrays.toString(intArray));
     }
