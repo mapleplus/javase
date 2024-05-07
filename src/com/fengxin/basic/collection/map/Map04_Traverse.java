@@ -1,11 +1,13 @@
-package com.fengxin.basic.collection;
+package com.fengxin.basic.collection.map;
 
 import java.util.*;
 
 /**
  * @author FENGXIN
  * @data 2024.5.6
+ * 集合都有两种遍历方式 for each 和 iterator
  **/
+@SuppressWarnings ("all")
 public class Map04_Traverse {
     public static void main (String[] args) {
         Map map = new HashMap ();
@@ -15,14 +17,14 @@ public class Map04_Traverse {
         System.out.println ("--------------Traverse Map01--------------------");
     //     使用keySet遍历
     //     增强for循环
-        Set keyset = map.keySet ();
+        Set keyset = map.keySet ();//取出的是key
         for(Object key : keyset){
             System.out.println ("key: " + key + " value: " + map.get (key));
         }
     //     iterator
-        Iterator iterator1 = keyset.iterator ();
+        Iterator iterator1 = keyset.iterator ();//取出的是key
         while (iterator1.hasNext ()){
-            Object key = iterator1.next ();
+            Object key = iterator1.next ();//取出的是key
             System.out.println ("key: " + key + " value: " + map.get (key));
         }
         
@@ -42,10 +44,11 @@ public class Map04_Traverse {
         
         System.out.println ("--------------Traverse Map03--------------------");
     //     使用entrySet遍历
-        Set entryset = map.entrySet ();
-    //     增强for循环
+        Set entryset = map.entrySet ();//取出的是entry
+        System.out.println (entryset.getClass ());
+        //     增强for循环
         for(Object o : entryset){
-            Map.Entry entry = (Map.Entry) o;
+            Map.Entry entry = (Map.Entry) o;//取出的是Entry，但实际运行类型是Node
             System.out.println ("key: " + entry.getKey () + " value: " + entry.getValue () );
         }
     //     iterator

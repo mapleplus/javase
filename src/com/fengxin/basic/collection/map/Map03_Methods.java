@@ -1,4 +1,4 @@
-package com.fengxin.basic.collection;
+package com.fengxin.basic.collection.map;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.fengxin.basic.collection;
+package com.fengxin.basic.collection.set;
 
 import java.util.HashSet;
 import java.util.Iterator;
