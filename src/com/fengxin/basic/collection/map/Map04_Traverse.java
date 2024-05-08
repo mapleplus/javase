@@ -53,6 +53,7 @@ public class Map04_Traverse {
         }
     //     iterator
         Iterator iterator3 = entryset.iterator ();
+        // System.out.println (iterator3.next ().getClass ());
         while (iterator3.hasNext ()){
             Map.Entry entry = (Map.Entry) iterator3.next ();
             System.out.println ("key: " + entry.getKey () + " value: " + entry.getValue () );
