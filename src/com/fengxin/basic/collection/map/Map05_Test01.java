@@ -25,15 +25,9 @@ public class Map05_Test01 {
             }
         }
     //      第二种遍历方式，通过entrySet()方法遍历
-        Set entry = map.entrySet ();//返回EntrySet对象(数据类型是Map.Entry)，运行类型是EntrySet
         System.out.println ("entry运行类型："+entry.getClass ());
-        
-        Iterator iterator = entry.iterator ();//返回EntryIterator对象，Node实现了iterator方法
         while (iterator.hasNext ()) {
-            
-            Map.Entry entry1 = (Map.Entry) iterator.next ();//返回对象Entry，实际上运行类型是Node了
             System.out.println ("entry1运行类型："+ entry1.getClass ());
-            
             Employee01 em2 = (Employee01) entry1.getValue ();//getValue()返回Employee01对象
             System.out.println ("em2运行类型："+em2.getClass ());
             if (em2.getSalary () >= 20000) {
