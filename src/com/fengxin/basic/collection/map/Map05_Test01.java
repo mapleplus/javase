@@ -25,8 +25,11 @@ public class Map05_Test01 {
             }
         }
     //      第二种遍历方式，通过entrySet()方法遍历
-        System.out.println ("entry运行类型："+entry.getClass ());
+        Set entry = map.entrySet ();
+        Iterator iterator = entry.iterator ();
+        System.out.println ("entry运行类型："+ entry.getClass ());
         while (iterator.hasNext ()) {
+            Map.Entry entry1 = (Map.Entry) iterator.next ();
             System.out.println ("entry1运行类型："+ entry1.getClass ());
             Employee01 em2 = (Employee01) entry1.getValue ();//getValue()返回Employee01对象
             System.out.println ("em2运行类型："+em2.getClass ());

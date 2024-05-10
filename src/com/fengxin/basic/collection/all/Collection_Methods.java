@@ -3,7 +3,7 @@ package com.fengxin.basic.collection.all;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-
+@SuppressWarnings ("all")
 /**
  * @author FENGXIN
  * @data 2024.5.3
