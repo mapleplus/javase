@@ -7,7 +7,8 @@ package com.fengxin.basic.thread;
 public class ThreadDaemon {
     public static void main (String[] args) throws InterruptedException {
         ThreadDaemonTest threadDaemonTest = new ThreadDaemonTest ();
-        threadDaemonTest.setDaemon (true);//设置为守护线程
+        //设置为守护线程
+        threadDaemonTest.setDaemon (true);
         threadDaemonTest.start ();
         //主线程执行,执行结束后守护线程自动结束
         for (int i = 0 ; i < 10 ; i++) {
