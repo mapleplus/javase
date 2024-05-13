@@ -1,8 +1,4 @@
-package com.fengxin.basic.file;
-
-import com.fengxin.basic.file.buffered_show.BufferedReader_Show;
-import com.fengxin.basic.file.buffered_show.FileReader_Show;
-import com.fengxin.basic.file.buffered_show.StringReader_Show;
+package com.fengxin.basic.file.buffered_show;
 
 /**
  * @author FENGXIN
