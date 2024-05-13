@@ -1,4 +1,4 @@
-package com.fengxin.basic.collection.all;
+package com.fengxin.basic.collection.general;
 
 import java.util.ArrayList;
 import java.util.Collection;

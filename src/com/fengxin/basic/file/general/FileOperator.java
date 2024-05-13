@@ -1,4 +1,4 @@
-package com.fengxin.basic.file;
+package com.fengxin.basic.file.general;
 
 import java.io.File;
 
