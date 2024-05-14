@@ -9,8 +9,10 @@ public class ThreadMethods01 {
     public static void main (String[] args) throws InterruptedException {
         ThreadMethod01 threadMethod01 = new ThreadMethod01 ();
         Thread thread = new Thread (threadMethod01);
-        thread.setName ("feng");//set thread name
-        thread.setPriority (Thread.MAX_PRIORITY);//set thread priority
+        //set thread name
+        thread.setName ("feng");
+        //set thread priority
+        thread.setPriority (Thread.MAX_PRIORITY);
         thread.start ();
         while (true) {
             //main线程休眠10s
@@ -30,7 +32,8 @@ class ThreadMethod01 implements Runnable{
                 System.out.println (Thread.currentThread ().getName () + " is running.");
             }
             try {
-                Thread.sleep (5000);//thread sleep 5s,但是1s后main线程中断了thread线程的休眠
+                //thread sleep 5s,但是1s后main线程中断了thread线程的休眠
+                Thread.sleep (5000);
             } catch (InterruptedException e) {
                 System.out.println (Thread.currentThread ().getName () + " is interrupted.");
             }

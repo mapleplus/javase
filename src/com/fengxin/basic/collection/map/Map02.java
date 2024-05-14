@@ -18,7 +18,8 @@ public class Map02 {
         // 其中包含了HashMap中的所有键值对。
         // 这个Set集合的运行类是HashMap$EntrySet，它是HashMap的一个内部类，
         // 用于存储Map.Entry类型的元素
-         Set set = map.entrySet ();//set的运行类是HashMap$EntrySet
+        //set的运行类是HashMap$EntrySet
+         Set set = map.entrySet ();
         System.out.println (set.getClass ());
         // 遍历set时，每次迭代都会得到一个Map.Entry类型的对象，即HashMap$Node类型的对象
         for (Object o : set) {

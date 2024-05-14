@@ -6,7 +6,8 @@ public class Account {
     private char sex;
     private String password;
     private double money;
-    private double limitMoney;//取现额度
+    //取现额度
+    private double limitMoney;
 
     public char getSex() {
         return sex;

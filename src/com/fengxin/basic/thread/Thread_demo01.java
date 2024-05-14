@@ -25,9 +25,11 @@ class CatThread extends Thread {// 创建一个线程类(该类继承Thread类�
         @Override
         public void run () {
             while (true) {
-                System.out.println ("小猫线程执行..." + (++count) + Thread.currentThread ().getName ());// THread-0线程
+                // THread-0线程
+                System.out.println ("小猫线程执行..." + (++count) + Thread.currentThread ().getName ());
                 try {// 保证线程在sleep时不会被中断（即在sleep时还能感知响应，能响应中断，不会睡死）
-                    Thread.sleep (1000);// 线程休眠1秒
+                    // 线程休眠1秒
+                    Thread.sleep (1000);
                 } catch (InterruptedException e) {
                     throw new RuntimeException (e);
                 }

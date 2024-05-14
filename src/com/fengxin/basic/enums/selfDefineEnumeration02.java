@@ -42,7 +42,8 @@ enum Season2 {
     SUMMER("夏天", "炎热"),
     AUTUMN("秋天", "凉爽"),
     WINTER("冬天", "寒冷"),
-    WHAT// 使用无参构造器创建枚举对象，实参列表和小括号都可以省略
+    // 使用无参构造器创建枚举对象，实参列表和小括号都可以省略
+    WHAT
     ;
 
     private String name;

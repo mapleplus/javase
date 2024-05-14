@@ -23,7 +23,8 @@ class MyThread implements Runnable {//相当于Thread类实现Runnable接口
     
     @Override
     public void run(){
-        if(target != null){//动态绑定传入的对象，调用传入对象的run方法
+        //动态绑定传入的对象，调用传入对象的run方法
+        if(target != null){
             target.run ();
         }
     }

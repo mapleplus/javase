@@ -17,7 +17,8 @@ public class Generic01 {
 //创建泛型类
 class Person<E>{
 //    属性泛型
-    E s;//E表示s的数据类型，在定义Person对象时指定类型，即在编译期间就决定E的类型
+    //E表示s的数据类型，在定义Person对象时指定类型，即在编译期间就决定E的类型
+    E s;
 //    函数返回值类型泛型
     public E getS(){
         return s;

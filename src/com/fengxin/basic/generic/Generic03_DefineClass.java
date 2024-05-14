@@ -13,7 +13,8 @@ public class Generic03_DefineClass {
 class Person01 <T,E> {
     T name;
     E age;
-    E[] arr;//使用泛型的数组不能被初始化
+    //使用泛型的数组不能被初始化
+    E[] arr;
     // 静态成员中不能使用类的泛型
     // static T staticField;
     // static void staticMethod(T t,E,e) {

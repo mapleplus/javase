@@ -12,7 +12,8 @@ public class Map01 {
         Map map = new HashMap ();
         // key一对一value,Map中key不允许重复，原因和HashSet一样，如果相同则会覆盖原数据
         map.put("key1", "value1");
-        map.put("key1", "value2");//value2覆盖value1
+        //value2覆盖value1
+        map.put("key1", "value2");
         // value一对多key,Map中的value可以重复
         map.put("key2", "value2");
         map.put("key3", "value2");

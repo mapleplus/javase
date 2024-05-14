@@ -34,7 +34,9 @@ public class Array {
         }
         return -1;
         }
-        else return -1;
+        else{
+            return -1;
+        }
     }
 //    数组扩容
     public static int[] arrExpansion(int[] arr, int newSize) {

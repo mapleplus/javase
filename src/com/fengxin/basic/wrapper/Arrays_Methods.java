@@ -27,8 +27,10 @@ public class Arrays_Methods {
         int index3 = Arrays.binarySearch(intArray, searchKey3);
         // 打印查找结果
         System.out.println ("index = " + index1);
-        System.out.println ("index = " + index2);//index2 = -(low + 1),low此时为5
-        System.out.println ("index = " + index3);//index2 = -(low + 1),low此时为0
+        //index2 = -(low + 1),low此时为5
+        System.out.println ("index = " + index2);
+        //index2 = -(low + 1),low此时为0
+        System.out.println ("index = " + index3);
         
         // 使用Arrays.equals方法比较两个数组是否相等
         int[] intArray2 = {1, 2, 3, 4, 5};

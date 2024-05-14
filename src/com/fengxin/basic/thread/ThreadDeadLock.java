@@ -19,7 +19,8 @@ public class ThreadDeadLock {
     }
 }
 class DeadLockDemo implements Runnable{
-    private static Object o1 = new Object ();//保证数据共享
+    //保证数据共享
+    private static Object o1 = new Object ();
     private static Object o2 = new Object ();
     private boolean flag;
     public DeadLockDemo(boolean flag){

@@ -5,7 +5,8 @@ public class Student extends Person {
     private final double score;
 
     public Student(String name,int age,int id, double score) {
-        super(name,age);//构造器中super必须出现在首行
+        //构造器中super必须出现在首行
+        super(name,age);
         this.id = id;
         this.score = score;
     }

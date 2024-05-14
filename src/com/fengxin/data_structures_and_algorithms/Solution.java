@@ -13,7 +13,7 @@ public class Solution {
         int startX = 0,startY = 0,count = 1;
         int i = startX;
         int j = startY;
-        int arr[][] = new int[n][n];
+        int[][] arr = new int[n][n];
         while(num != 0){
             // 最外围一圈
             // 上横行,i不变j变
