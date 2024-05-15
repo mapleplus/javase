@@ -1,4 +1,4 @@
-package com.fengxin.basic.file.fileinputstream;
+package com.fengxin.basic.file.filestream;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

@@ -4,35 +4,27 @@ package com.fengxin.data_structures_and_algorithms;
  * @author FENGXIN
  * @data 2024.4.29
  * 单链表的实现
- * 说明：指定位置的操作时，以头结点head为起始结点，for循环中索引 (i < index - 1) 即为指定位置的前一个位置
- * (i < index) 即为指定位置
+ * 下标索引head.next 从0开始
+ * 说明：指定位置的操作时，以第一个结点head.next为起始结点，for循环中索引 (i = 0;i < index;i++) 即为指定位置index的前一个位置
  **/
 public class Link_Test {
     public static void main (String[] args) {
         LinkedList<Integer> linkedList = new LinkedList<> ();
-        linkedList.addFirst (5);
-        linkedList.addFirst (4);
-        linkedList.addFirst (3);
+        linkedList.addFirst (7);
         linkedList.addFirst (2);
         linkedList.addFirst (1);
+        linkedList.add (3,0);
+        linkedList.remove (2);
+        linkedList.addFirst (6);
+        linkedList.addLast (4);
+        System.out.println (linkedList.get (4));
         linkedList.printLinkedList ();
-        System.out.println ();
-        linkedList.add (3,6);
-        linkedList.printLinkedList ();
-        System.out.println ();
-        linkedList.remove (3);
-        linkedList.printLinkedList ();
-        System.out.println ();
-        System.out.println (linkedList.get (3));
-        linkedList.set (3,7);
-        linkedList.printLinkedList ();
-        System.out.println ();
     }
 }
 // 单链表类
 class LinkedList<E> {
 //    单链表结点
-    private static class Node<E> {
+    public static class Node<E> {
         E value;
         Node<E> next;
         Node(E value){
@@ -67,7 +59,7 @@ class LinkedList<E> {
     public void addLast(E value){
         Node<E> newNode = new Node<>(value);
         tail.next = newNode;
-        newNode = tail;
+        tail = newNode;
         size++;
     }
 //    添加元素在指定位置
@@ -78,11 +70,12 @@ class LinkedList<E> {
         //如果索引等于链表长度，则直接添加到链表尾部
         if(index == size){
             addLast(value);
+            return;
         }
         Node<E> newNode = new Node<>(value);
         //移动到指定位置的前一个位置
         Node<E> prev = head;
-        for (int i = 0 ; i < index - 1; i++) {
+        for (int i = 0 ; i < index; i++) {
             prev = prev.next;
         }
         newNode.next = prev.next;
@@ -126,7 +119,7 @@ class LinkedList<E> {
         return val;
     }
 //    删除指定位置的元素
-    public E remove(int index){
+    public void remove(int index){
 //        如果索引小于0或者大于等于链表长度，则抛出异常
         if(index < 0 || index >= size){
             throw new IllegalArgumentException("索引超出范围");
@@ -137,7 +130,7 @@ class LinkedList<E> {
         }
         //移动到指定位置的前一个位置
         Node<E> prev = head;
-        for (int i = 0 ; i < index - 1; i++) {
+        for (int i = 0 ; i < index; i++) {
             prev = prev.next;
         }
         Node<E> toRemove = prev.next;
@@ -148,7 +141,6 @@ class LinkedList<E> {
         }
         size--;
         toRemove.next = null;
-        return toRemove.value;
     }
 //    获取链表头部元素
     public E getFirst() {
@@ -177,7 +169,7 @@ class LinkedList<E> {
             throw new IllegalArgumentException("链表为空");
         }
         //移动到指定位置
-        Node<E> getNode = head;
+        Node<E> getNode = head.next;
         for (int i = 0 ; i < index ; i++) {
             getNode = getNode.next;
         }
@@ -223,4 +215,5 @@ class LinkedList<E> {
             printNode = printNode.next;
         }
     }
+   
 }

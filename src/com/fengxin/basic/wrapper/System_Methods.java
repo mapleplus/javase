@@ -16,7 +16,7 @@ public class System_Methods {
         // src the source array.
         // srcPos – starting position in the source array.
         // dest – the destination array.
-        // destPos – starting position in the destination data.
+        // destPos – starting position in the destination data.properties.
         // length – the number of array elements to be copied.
         // 输出复制后的数组
         System.out.println (Arrays.toString(arr2));

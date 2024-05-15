@@ -1,13 +1,13 @@
-package com.fengxin.basic.file.fileinputstream;
+package com.fengxin.basic.file.filestream;
 
 import java.io.IOException;
 
 /**
  * @author FENGXIN
  * @data 2024.5.13
- * 文件输出流（FileOutputStream）
+ * 文件输出流（FileOutputStream01）
  **/
-public class FileOutputStream {
+public class FileOutputStream01 {
     public static void main (String[] args) {
         writeFile();
     }
