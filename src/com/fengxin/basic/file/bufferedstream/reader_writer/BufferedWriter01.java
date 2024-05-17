@@ -6,7 +6,6 @@ import java.io.IOException;
 
 /**
  * @author FENGXIN
- * @data 2024.5.15
  **/
 public class BufferedWriter01 {
     public static void main (String[] args) throws IOException {
