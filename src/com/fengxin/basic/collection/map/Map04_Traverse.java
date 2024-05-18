@@ -4,7 +4,6 @@ import java.util.*;
 
 /**
  * @author FENGXIN
- * @data 2024.5.6
  * 集合都有两种遍历方式 for each 和 iterator
  **/
 @SuppressWarnings ("all")

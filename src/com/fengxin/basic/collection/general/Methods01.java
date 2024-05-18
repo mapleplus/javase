@@ -4,7 +4,6 @@ import java.util.*;
 
 /**
  * @author FENGXIN
- * @data 2024.5.8
  * Collection的工具类
  **/
 public class Methods01 {

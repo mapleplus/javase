@@ -2,7 +2,6 @@ package com.fengxin.basic.string;
 
 /**
  * @author FENGXIN
- * @data 2024.4.29
  * String类的面试题测试
  **/
 public class StringTest01 {

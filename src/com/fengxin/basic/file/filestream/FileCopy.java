@@ -6,7 +6,6 @@ import java.io.IOException;
 
 /**
  * @author FENGXIN
- * @data 2024.5.13
  * 文件的拷贝
  **/
 public class FileCopy {

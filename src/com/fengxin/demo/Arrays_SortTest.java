@@ -1,9 +1,9 @@
 package com.fengxin.demo;
 
 import java.util.Arrays;
-import java.util.Comparator; /**
+import java.util.Comparator;
+/**
  * @author FENGXIN
- * @data 2024.5.2
  * 絮例：自定义Book类，属性name和price，有一个 Book[] books = 4本书对缘.
  * 使用前面学习过的传递 实现Comparator 接回匿名内部类，也称为定制排序。
  * 按照 (1)price 从大到小 (2)price 从小到大 (3)按照书名长度从大到小

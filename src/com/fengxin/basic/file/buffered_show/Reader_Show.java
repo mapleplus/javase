@@ -2,7 +2,6 @@ package com.fengxin.basic.file.buffered_show;
 
 /**
  * @author FENGXIN
- * @data 2024.5.13
  * 抽象类
  **/
 public abstract class Reader_Show {

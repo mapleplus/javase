@@ -2,7 +2,6 @@ package com.fengxin.data_structures_and_algorithms;
 
 /**]
  * @author FENGXIN
- * @data 2024.4.29
  * 数组的相关操作
  **/
 public class Array {

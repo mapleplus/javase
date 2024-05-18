@@ -7,7 +7,6 @@ import java.io.ObjectOutputStream;
 
 /**
  * @author FENGXIN
- * @data 2024.5.15
  * 序列化
  **/
 public class ObjectOutputStream01 {

@@ -2,7 +2,6 @@ package com.fengxin.basic.exception;
 
 /**
  * @author FENGXIN
- * @data 2024.5.10
  **/
 public class ThrowsException {
     // 继续抛出异常给JVM

@@ -4,7 +4,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 /**
  * @author FENGXIN
- * @data 2024.5.2
  **/
 public class Data_Test {
     public static void main (String[] args) throws ParseException {

@@ -5,7 +5,6 @@ import java.util.List;
 
 /**
  * @author FENGXIN
- * @data 2024.5.3
  **/
 public class List_Methods {
     public static void main (String[] args) {

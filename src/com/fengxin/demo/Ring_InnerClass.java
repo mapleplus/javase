@@ -2,7 +2,6 @@ package com.fengxin.demo;
 
 /**
  * @author FENGXIN
- * @data 2024.5.10
  *
  *  有一个铃声接口Bell， 里面有个ring方法。
  *  有一个手机类cellPhone， 具有闹钟功能alarmClock, 参数是Bell类型

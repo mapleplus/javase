@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 /**
  * @author FENGXIN
- * @data 2024.5.2
  **/
 public class Arrays_Methods {
     public static void main (String[] args) {

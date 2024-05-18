@@ -2,7 +2,6 @@ package com.fengxin.basic.localinnerclass;
 
 /**
  * @author FENGXIN
- * @data 2024.5.10
  **/
 public class LocalInnerClass {
     public static void main(String[] args) {

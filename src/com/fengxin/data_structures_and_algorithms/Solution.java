@@ -2,7 +2,6 @@ package com.fengxin.data_structures_and_algorithms;
 
 /**
  * @author FENGXIN
- * @data 2024.5.1
  **/
 
 public class Solution {

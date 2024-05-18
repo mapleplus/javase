@@ -6,7 +6,6 @@ import java.time.format.DateTimeFormatter;
 
 /**
  * @author FENGXIN
- * @data 2024.5.2
  **/
 public class LocalDateTime_Test {
     public static void main (String[] args) {

@@ -1,7 +1,7 @@
 package com.fengxin.basic.override;
 
 /**
- * @author xjn
+ * @author FENGXIN
  * 理解重写及super的注意事项
  */
 public class Override_Study {

@@ -6,7 +6,6 @@ import java.util.Properties;
 
 /**
  * @author FENGXIN
- * @data 2024.5.15
  **/
 public class Properties01 {
     public static void main (String[] args) throws IOException {

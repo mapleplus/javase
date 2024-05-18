@@ -5,7 +5,6 @@ import java.io.*;
 
 /**
  * @author FENGXIN
- * @data 2024.5.15
  **/
 public class BufferedIn_OutStream {
     public static void main (String[] args) {

@@ -4,7 +4,6 @@ import java.util.HashSet;
 
 /**
  * @author FENGXIN
- * @data 2024.5.5
  **/
 public class HashSet01 {
     public static void main (String[] args) {

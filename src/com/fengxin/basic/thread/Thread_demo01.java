@@ -2,7 +2,6 @@ package com.fengxin.basic.thread;
 
 /**
  * @author FENGXIN
- * @data 2024.5.9
  * 创建一个Java线程，每隔一秒打印一次“小猫线程执行...”
  **/
 public class Thread_demo01 {

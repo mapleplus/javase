@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 /**
  * @author FENGXIN
- * @data 2024.5.10
  **/
 public class Exception_Demo {
     public static void main (String[] args) {

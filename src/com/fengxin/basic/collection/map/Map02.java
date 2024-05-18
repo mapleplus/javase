@@ -7,7 +7,6 @@ import java.util.Set;
 
 /**
  * @author FENGXIN
- * @data 2024.5.6
  **/
 public class Map02 {
     public static void main (String[] args) {

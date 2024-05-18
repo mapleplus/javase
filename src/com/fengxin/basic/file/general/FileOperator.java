@@ -4,7 +4,6 @@ import java.io.File;
 
 /**
  * @author FENGXIN
- * @data 2024.5.12
  **/
 public class FileOperator {
     public static void main (String[] args) {

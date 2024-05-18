@@ -2,7 +2,6 @@ package com.fengxin.basic.interfaces;
 
 /**
  * @author FENGXIN
- * @data 2024.5.2
  **/
 public class Extends_VS_Interface {
     public static void main(String[] args) {

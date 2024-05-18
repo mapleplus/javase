@@ -2,7 +2,6 @@ package com.fengxin.basic.generic;
 
 /**
  * @author FENGXIN
- * @data 2024.4.29
  **/
 public class Generic01 {
     public static void main (String[] args) {

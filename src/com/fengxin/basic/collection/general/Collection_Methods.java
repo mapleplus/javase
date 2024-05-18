@@ -6,7 +6,6 @@ import java.util.List;
 @SuppressWarnings ("all")
 /**
  * @author FENGXIN
- * @data 2024.5.3
  **/
 public class Collection_Methods {
     public static void main (String[] args) {

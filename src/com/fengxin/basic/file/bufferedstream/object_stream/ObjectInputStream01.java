@@ -4,7 +4,6 @@ import java.io.*;
 
 /**
  * @author FENGXIN
- * @data 2024.5.15
  * 反序列化
  * 顺序要和序列化时一致
  * Cat类要放在公共包引用或者同包下，否则会报错

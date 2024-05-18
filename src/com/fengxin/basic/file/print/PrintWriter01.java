@@ -5,7 +5,6 @@ import java.io.PrintWriter;
 
 /**
  * @author FENGXIN
- * @data 2024.5.15
  **/
 public class PrintWriter01 {
     public static void main (String[] args) throws FileNotFoundException {

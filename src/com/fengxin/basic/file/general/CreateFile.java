@@ -5,7 +5,6 @@ import java.io.IOException;
 
 /**
  * @author FENGXIN
- * @data 2024.5.12
  **/
 
 public class CreateFile {

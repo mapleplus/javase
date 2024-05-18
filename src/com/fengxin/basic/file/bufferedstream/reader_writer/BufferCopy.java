@@ -4,7 +4,6 @@ import java.io.*;
 
 /**
  * @author FENGXIN
- * @data 2024.5.15
  **/
 public class BufferCopy {
     public static void main (String[] args) {

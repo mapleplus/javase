@@ -1,4 +1,4 @@
-package com.fengxin.basic.net.socket;
+package com.fengxin.basic.net.socket.tcp;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -2,7 +2,6 @@ package com.fengxin.basic.file.buffered_show;
 
 /**
  * @author FENGXIN
- * @data 2024.5.13
  * 简单模拟处理类原理
  **/
 public class Main {

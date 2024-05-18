@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 /**
  * @author FENGXIN
- * @data 2024.5.4
  * 数组的扩容机制
  **/
 public class ArrayList_Expand {

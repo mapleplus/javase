@@ -4,7 +4,6 @@ import java.io.IOException;
 
 /**
  * @author FENGXIN
- * @data 2024.5.13
  * 文件输出流（FileOutputStream01）
  **/
 public class FileOutputStream01 {

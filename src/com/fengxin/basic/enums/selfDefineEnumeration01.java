@@ -2,7 +2,6 @@ package com.fengxin.basic.enums;
 
 /**
  * @author FENGXIN
- * @data 2024.5.2
  **/
 public class selfDefineEnumeration01 {
     public static void main(String[] args) {

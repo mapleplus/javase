@@ -5,7 +5,6 @@ import java.util.List;
 
 /**
  * @author FENGXIN
- * @data 2024.5.8
  **/
 public class Generic06 {
     public static void main (String[] args) {

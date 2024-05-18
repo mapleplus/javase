@@ -5,7 +5,6 @@ import java.util.TreeSet;
 
 /**
  * @author FENGXIN
- * @data 2024.5.7
  **/
 @SuppressWarnings ("all")
 public class TreeSet01 {

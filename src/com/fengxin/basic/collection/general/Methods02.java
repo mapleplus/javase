@@ -4,7 +4,6 @@ import java.util.*;
 
 /**
  * @author FENGXIN
- * @data 2024.5.8
  **/
 public class Methods02 {
     public static void main (String[] args) {

@@ -4,7 +4,6 @@ import java.util.LinkedList;
 
 /**
  * @author FENGXIN
- * @data 2024.5.4
  **/
 public class LinkedList_Test {
     public static void main (String[] args) {

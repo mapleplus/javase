@@ -2,7 +2,6 @@ package com.fengxin.demo;
 
 /**
  * @author FENGXIN
- * @data 2024.5.11
  * 创建两个线程，一个线程输出hello，另一个线程输出world，交替输出10次。
  **/
 public class Thread_Demo01 {

@@ -1,4 +1,4 @@
-package com.fengxin.basic.net.socket;
+package com.fengxin.basic.net.socket.tcp;
 
 import java.io.*;
 import java.net.ServerSocket;
@@ -7,10 +7,15 @@ import java.net.Socket;
 /**
  * @author FENGXIN
  * 服务器端
+ * 更新内容：使用字符流传输数据
+ * 包装流
  **/
 public class TCPServer03 {
     public static void main (String[] args) throws IOException {
+        // 创建ServerSocket对象，指定端口号
         ServerSocket serverSocket = new ServerSocket (8888);
+        // 等待客户端连接, 返回一个Socket对象
+        // 如果没有客户端连接，accept方法会一直阻塞
         Socket socket = serverSocket.accept ();
         
         // 接收客户端发送的数据

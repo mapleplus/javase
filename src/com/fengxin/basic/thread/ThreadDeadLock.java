@@ -2,7 +2,6 @@ package com.fengxin.basic.thread;
 
 /**
  * @author FENGXIN
- * @data 2024.5.12
  * 测试死锁案例
  * thread1,thread2分别拿到o1,o2对象锁
  * 接着thread1想拿到o2锁，但被thread2拿着

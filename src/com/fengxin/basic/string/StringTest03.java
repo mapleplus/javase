@@ -2,8 +2,6 @@ package com.fengxin.basic.string;
 
 /**
  * @author FENGXIN
- * @data 2024.5.1
- *     @IntrinsicCandidate
  *     public static Integer valueOf(int i) {
  *         if (i >= IntegerCache.low && i <= IntegerCache.high)
  *             return IntegerCache.cache[i + (-IntegerCache.low)];

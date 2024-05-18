@@ -2,7 +2,6 @@ package com.fengxin.basic.thread;
 
 /**
  * @author FENGXIN
- * @data 2024.5.11
  * 让线程休眠，并使用interrupt()方法中断线程。
  **/
 public class ThreadMethods01 {

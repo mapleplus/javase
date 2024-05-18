@@ -2,7 +2,6 @@ package com.fengxin.basic.thread;
 
 /**
  * @author FENGXIN
- * @data 2024.5.9
  * 模拟Thread
  **/
 public class Thread_demo03 {

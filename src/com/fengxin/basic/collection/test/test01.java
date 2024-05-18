@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 /**
  * @author FENGXIN
- * @data 2024.5.8
  **/
 /*
 (1)封装一个新闻类， 包含标题和内容属性， 提供get、set方法， 重写toString方法， 打印对象时只打印标题；

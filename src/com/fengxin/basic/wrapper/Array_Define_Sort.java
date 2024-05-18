@@ -5,7 +5,6 @@ import java.util.Comparator;
 
 /**
  * @author FENGXIN
- * @data 2024.5.2
  * 使用冒泡排序实现定制排序
  **/
 public class Array_Define_Sort {

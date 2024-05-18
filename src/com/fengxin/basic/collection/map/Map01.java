@@ -5,7 +5,6 @@ import java.util.Map;
 
 /**
  * @author FENGXIN
- * @data 2024.5.6
  **/
 public class Map01 {
     public static void main (String[] args) {

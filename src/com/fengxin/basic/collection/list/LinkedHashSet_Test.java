@@ -4,7 +4,6 @@ import java.util.LinkedHashSet;
 
 /**
  * @author FENGXIN
- * @data 2024.5.6
  **/
 public class LinkedHashSet_Test {
     public static void main (String[] args) {

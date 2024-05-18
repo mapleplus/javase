@@ -6,7 +6,6 @@ import java.util.Iterator;
 
 /**
  * @author FENGXIN
- * @data 2024.5.3
  **/
 public class Collection_Traverse {
 //      遍历集合的代码示例

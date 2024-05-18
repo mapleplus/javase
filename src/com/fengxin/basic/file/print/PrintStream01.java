@@ -5,7 +5,6 @@ import java.io.PrintStream;
 
 /**
  * @author FENGXIN
- * @data 2024.5.15
  **/
 public class PrintStream01 {
     public static void main (String[] args) throws IOException {

@@ -5,7 +5,6 @@ import java.io.Serializable;
 
 /**
  * @author FENGXIN
- * @data 2024.5.15
  **/
 public class Cat implements Serializable {
     private final String name;

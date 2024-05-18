@@ -6,7 +6,6 @@ import java.util.Objects;
 
 /**
  * @author FENGXIN
- * @data 2024.5.5
  * HashSet 集合的应用
  * 员工的姓名和年龄相同才判定为同一个员工
  **/

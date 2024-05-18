@@ -1,7 +1,6 @@
 package com.fengxin.basic.wrapper;
 /**
  * @author FENGXIN
- * @data 2024.4.28
  **/
 
 // 编写一个Java程序，演示如何使用Integer类的方法。包括获取最大值和最小值、判断是否为数字或字母、判断是否为大写或小写、转换为大写或小写等。

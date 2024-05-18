@@ -2,7 +2,6 @@ package com.fengxin.data_structures_and_algorithms;
 
 /**
  * @author FENGXIN
- * @data 2024.4.29
  * 单链表的实现
  * 下标索引head.next 从0开始
  * 说明：指定位置的操作时，以第一个结点head.next为起始结点，for循环中索引 (i = 0;i < index;i++) 即为指定位置index的前一个位置

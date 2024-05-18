@@ -2,7 +2,6 @@ package com.fengxin.demo;
 
 /**
  * @author FENGXIN
- * @data 2024.5.11
  * 主线程每隔一秒输出hi，当hi输出5次时
  * 创建一个新线程threadDemo02_Test01
  * 实现插队先让该线程每隔一秒输出hello

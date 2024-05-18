@@ -2,7 +2,6 @@ package com.fengxin.basic.file.buffered_show;
 
 /**
  * @author FENGXIN
- * @data 20224.5.13
  * 处理流
  * BufferedReader_Show类封装了StringReader_Show和FileReader_Show类，被封装的类称为节点流，BufferedReader_Show类称为处理流。
  * BufferedReader_Show类重写了节点流中的所有方法，并且添加了增强功能的方法。

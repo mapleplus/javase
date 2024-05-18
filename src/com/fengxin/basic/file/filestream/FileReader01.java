@@ -5,7 +5,6 @@ import java.io.IOException;
 
 /**
  * @author FENGXIN
- * @data 2024.5.13
  * 字符输入流
  **/
 public class FileReader01 {

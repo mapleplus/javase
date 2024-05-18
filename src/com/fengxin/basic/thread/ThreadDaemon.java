@@ -2,7 +2,6 @@ package com.fengxin.basic.thread;
 
 /**
  * @author FENGXIN
- * @data 2024.5.11
  **/
 public class ThreadDaemon {
     public static void main (String[] args) throws InterruptedException {

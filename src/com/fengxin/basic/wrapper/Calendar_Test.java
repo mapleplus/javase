@@ -4,7 +4,6 @@ import java.util.Calendar;
 
 /**
  * @author FENGXIN
- * @data 2024.5.2
  **/
 public class Calendar_Test {
     public static void main (String[] args) {
