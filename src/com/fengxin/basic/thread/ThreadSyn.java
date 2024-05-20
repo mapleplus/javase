@@ -15,13 +15,14 @@ public class ThreadSyn {
     }
 }
 class ThreadSynchronized implements Runnable {
-    private static int nums = 100;
+    private static int num = 100;
     private boolean synFlag = true;
     @Override
     public void run () {
         while (synFlag) {
+           // 对象锁
            synchronized (this){
-                if(nums <= 0){
+                if(num <= 0){
                     System.out.println ("票已售完");
                     synFlag = false;
                     return;
@@ -31,7 +32,7 @@ class ThreadSynchronized implements Runnable {
                 } catch (InterruptedException e) {
                     throw new RuntimeException (e);
                 }
-                System.out.println (Thread.currentThread ().getName () + "售票中... " + "剩余票数：" + --nums);
+                System.out.println (Thread.currentThread ().getName () + "售票中... " + "剩余票数：" + --num);
             }
         }
     }

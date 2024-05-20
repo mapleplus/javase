@@ -14,8 +14,8 @@ public class ThreadMethods01 {
         thread.setPriority (Thread.MAX_PRIORITY);
         thread.start ();
         while (true) {
-            //main线程休眠10s
-            System.out.println ("main sleep...");
+            //main线程休眠1s
+            System.out.println ("main sleep 1s...");
             Thread.sleep(1000);
             //main线程中断thread线程休眠
             thread.interrupt ();//interrupt the thread

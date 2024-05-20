@@ -13,25 +13,25 @@ public class Thread_demo03 {
         myThread.start ();
     }
 }
-class MyThread implements Runnable {//相当于Thread类实现Runnable接口
+// 相当于Thread类实现Runnable接口
+class MyThread implements Runnable {
     private final Runnable target;
     
     public MyThread (Runnable target) {//构造函数,将Runnable对象传入
         this.target = target;
-    }
-    
-    @Override
-    public void run(){
-        //动态绑定传入的对象，调用传入对象的run方法
-        if(target != null){
-            target.run ();
-        }
     }
     public void start () {
         start0();
     }
     public void start0 () {//调用native方法，由JVM调用
         run ();
+    }
+    @Override
+    public void run(){
+        //动态绑定传入的对象，调用传入对象的run方法
+        if(target != null){
+            target.run ();
+        }
     }
 }
 class Tiger implements Runnable {

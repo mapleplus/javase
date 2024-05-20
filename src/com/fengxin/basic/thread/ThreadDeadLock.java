@@ -19,26 +19,26 @@ public class ThreadDeadLock {
 }
 class DeadLockDemo implements Runnable{
     //保证数据共享
-    private static Object o1 = new Object ();
-    private static Object o2 = new Object ();
-    private boolean flag;
+    private static final Object O1 = new Object ();
+    private static final Object O2 = new Object ();
+    private final boolean flag;
     public DeadLockDemo(boolean flag){
         this.flag = flag;
     }
     @Override
     public void run(){
         if(flag){
-            synchronized (o1){
+            synchronized (O1){
                 System.out.println(Thread.currentThread ().getName () + " just lock1...");
-                synchronized (o2){
+                synchronized (O2){
                     System.out.println("lock1 & lock2...");
                 }
             }
         }
         else{
-            synchronized (o2){
+            synchronized (O2){
                 System.out.println(Thread.currentThread ().getName () + " just lock2...");
-                synchronized (o1){
+                synchronized (O1){
                     System.out.println("lock1 & lock2...");
                 }
             }

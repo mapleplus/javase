@@ -13,7 +13,8 @@ public class Thread_demo02 {
         thread.start ();
     }
 }
-class Dog implements Runnable {// Tiger线程实现Runnable接口
+// 线程实现--->实现Runnable接口
+class Dog implements Runnable {
     @Override
     public void run() {
             for (int i = 1; i <= 10; i++) {
@@ -24,6 +25,5 @@ class Dog implements Runnable {// Tiger线程实现Runnable接口
                     throw new RuntimeException (e);
                 }
             }
-        
     }
 }

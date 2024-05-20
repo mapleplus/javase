@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 
 /**
  * @author FENGXIN
@@ -14,7 +15,7 @@ public class InputStreamReader01 {
         String filePath = "E:\\In_Out_RW.txt";
         FileInputStream fileInputStream = new FileInputStream (filePath);
         // 1.将FileInputStream对象传递给转换流，指定编码格式
-        InputStreamReader inputStreamReader = new InputStreamReader (fileInputStream,"UTF-8");
+        InputStreamReader inputStreamReader = new InputStreamReader (fileInputStream, StandardCharsets.UTF_8);
         // 2.将InputStreamReader对象传递给BufferedReader对象
         BufferedReader bufferedReader = new BufferedReader (inputStreamReader);
         String line;

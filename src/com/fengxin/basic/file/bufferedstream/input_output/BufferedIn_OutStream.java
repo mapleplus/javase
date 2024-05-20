@@ -5,6 +5,7 @@ import java.io.*;
 
 /**
  * @author FENGXIN
+ * 字节流
  **/
 public class BufferedIn_OutStream {
     public static void main (String[] args) {
