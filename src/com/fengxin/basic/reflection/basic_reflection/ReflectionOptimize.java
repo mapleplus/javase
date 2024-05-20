@@ -19,7 +19,7 @@ public class ReflectionOptimize {
         
         // 反射调用方法
         Class<?> cls = Class.forName (className);
-        Object obj = cls.newInstance ();
+        Object obj = cls.getDeclaredConstructor ().newInstance ();
         Method method = cls.getMethod (methodName);
         // 优化反射调用, 关闭权限检查
         method.setAccessible (true);

@@ -29,7 +29,7 @@ public class ReflectionForCat {
         Class<?> cls = Class.forName (className);
         
         // 获取类的实例，通过cls得到加载类com.fengxin.basic.reflection.Cat的对象
-        Object o = cls.newInstance ();
+        Object o = cls.getDeclaredConstructor ().newInstance ();
         System.out.println (o.getClass ());
         
         // 获取方法，通过cls得到加载类com.fengxin.basic.reflection.Cat的名为methodName的方法对象
