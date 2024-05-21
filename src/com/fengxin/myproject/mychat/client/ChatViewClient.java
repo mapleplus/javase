@@ -22,7 +22,6 @@ public class ChatViewClient {
     }
      private static Scanner scanner = new Scanner (System.in);
     public static void chatMenu() throws IOException, ClassNotFoundException {
-        
         //登录
         // 设置系统运行标志
         boolean flag1 = true;
@@ -42,8 +41,8 @@ public class ChatViewClient {
                     String password = scanner.next ();
                     // 在服务器验证用户名和密码
                     if(ClientConnectServer.verifyPassword (username, password)){
-                    // 登录成功后进入聊天界面
-                            System.out.println (username + "登录成功！");
+                        // 登录成功后进入聊天界面
+                        System.out.println (username + "登录成功！");
                             boolean flag2 = true;
                             // 进入聊天界面
                             while (flag2) {

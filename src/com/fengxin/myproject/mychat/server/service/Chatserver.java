@@ -47,26 +47,26 @@ public class Chatserver {
                 ObjectInputStream ois = new ObjectInputStream (socket.getInputStream ());
                 User user = (User) ois.readObject ();
                 // 发送验证信息
-                Message message = new Message ();
-                ObjectOutputStream oos = new ObjectOutputStream (socket.getOutputStream ());
-                // 验证用户
-                // 用户名和密码正确
-                if(isValidUser (user.getUsername (),user.getPwd ())){
-                    // 向客户端发送登录成功的消息
-                    message.setMessageType (MessageType.LOGIN_SUCCESS);
-                    oos.writeObject (message);
-                    // 启动一个新线程来处理该客户端的请求
-                    ServerConnectClientThread scct = new ServerConnectClientThread (socket , user.getUsername ());
-                    scct.start ();
-                    // 将该客户端线程对象放入集合中
-                    ServerThreadMap.addServerThread (user.getUsername (), scct);
-                }else{
-                    // 向客户端发送登录失败的消息
-                    message.setMessageType (MessageType.LOGIN_FAIL);
-                    oos.writeObject (message);
-                    // 用户名和密码不正确，关闭连接
-                    socket.close ();
-                }
+                    Message message = new Message ();
+                    ObjectOutputStream oos = new ObjectOutputStream (socket.getOutputStream ());
+                    // 验证用户
+                    // 用户名和密码正确
+                    if(isValidUser (user.getUsername (),user.getPwd ())){
+                        // 向客户端发送登录成功的消息
+                        message.setMessageType (MessageType.LOGIN_SUCCESS);
+                        oos.writeObject (message);
+                        // 启动一个新线程来处理该客户端的请求
+                        ServerConnectClientThread scct = new ServerConnectClientThread (socket , user.getUsername ());
+                        scct.start ();
+                        // 将该客户端线程对象放入集合中
+                        ServerThreadMap.addServerThread (user.getUsername (), scct);
+                    }else{
+                        // 向客户端发送登录失败的消息
+                        message.setMessageType (MessageType.LOGIN_FAIL);
+                        oos.writeObject (message);
+                        // 用户名和密码不正确，关闭连接(注意关闭的顺序）
+                        socket.close ();
+                    }
             }
         } catch (IOException e) {
             e.printStackTrace ();

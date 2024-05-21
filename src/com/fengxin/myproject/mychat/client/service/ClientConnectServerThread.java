@@ -8,7 +8,7 @@ import java.net.Socket;
 
 /**
  * @author FENGXIN
- * 客户端验证成功后，打开一个线程，无线循环，用于随时接收服务器端发送的消息。
+ * 客户端验证成功后，打开一个线程，无限循环，用于随时接收服务器端发送的消息。
  **/
 public class ClientConnectServerThread extends Thread{
     private Socket socket;
@@ -25,6 +25,7 @@ public class ClientConnectServerThread extends Thread{
         while (true){
             // 接收服务器端发送的消息
             try {
+                // 无限循环，用于随时接收服务器端发送的消息
                 // 如果没有消息，线程会阻塞在这里
                 ObjectInputStream ois = new ObjectInputStream (socket.getInputStream ());
                 Message message =(Message) ois.readObject ();
