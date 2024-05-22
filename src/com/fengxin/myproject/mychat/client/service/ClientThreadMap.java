@@ -8,8 +8,8 @@ import java.util.Map;
  * 存放客户端线程
  **/
 public class ClientThreadMap {
-    private static Map<String, ClientConnectServerThread> map = new HashMap<String, ClientConnectServerThread> ();
-    public ClientConnectServerThread getClientThread (String userName) {
+    private static Map<String, ClientConnectServerThread> map = new HashMap<> ();
+    public static ClientConnectServerThread getClientThread (String userName) {
         return map.get (userName);
     }
     

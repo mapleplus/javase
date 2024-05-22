@@ -18,16 +18,16 @@ import java.util.concurrent.ConcurrentHashMap;
 public class Chatserver {
     private ServerSocket serverSocket = null;
     // 使用一个集合，实现多用户的连接
-    private static ConcurrentHashMap<String,User> validUsers = new ConcurrentHashMap<> ();
-    // 服务器加载时，将用户名和密码放入集合中
+    private static final ConcurrentHashMap<String,User> VALID_USERS = new ConcurrentHashMap<> ();
+    // 服务器加载时，将用户放入集合中
     static {
-        validUsers.put ("fengxin", new User ("fengxin", "123456"));
-        validUsers.put ("200", new User ("200", "000000"));
-        validUsers.put ("枫", new User ("枫", "888888"));
+        VALID_USERS.put ("fengxin", new User ("fengxin", "123456"));
+        VALID_USERS.put ("200", new User ("200", "000000"));
+        VALID_USERS.put ("枫", new User ("枫", "888888"));
     }
     // 判断用户名和密码是否正确
     public static boolean isValidUser(String username, String pwd){
-        User user = validUsers.get(username);
+        User user = VALID_USERS.get(username);
         if(user == null){
             return false;
         }
@@ -38,15 +38,15 @@ public class Chatserver {
         try {
             System.out.println ("等待客户端的连接");
             // 不能将9999写死，应该从配置文件中读取
-            // 连接后，一个端口对应一个客户端，不能重复，即不能写入while，导致端口被占用
+            // 使用一个端口对应连接多个客户端，不能重复，即不能写入while，导致端口被占用
             this.serverSocket = new ServerSocket (9999);
             while (true) {
                 // 连接客户端
                 Socket socket = serverSocket.accept ();
-                // 获取客户端发来的用户名和密码
+                // 获取客户端发来的用户
                 ObjectInputStream ois = new ObjectInputStream (socket.getInputStream ());
                 User user = (User) ois.readObject ();
-                // 发送验证信息
+                    // 发送验证信息
                     Message message = new Message ();
                     ObjectOutputStream oos = new ObjectOutputStream (socket.getOutputStream ());
                     // 验证用户
@@ -55,6 +55,7 @@ public class Chatserver {
                         // 向客户端发送登录成功的消息
                         message.setMessageType (MessageType.LOGIN_SUCCESS);
                         oos.writeObject (message);
+                        System.out.println ("用户" + user.getUsername () + "登录成功");
                         // 启动一个新线程来处理该客户端的请求
                         ServerConnectClientThread scct = new ServerConnectClientThread (socket , user.getUsername ());
                         scct.start ();
@@ -65,6 +66,7 @@ public class Chatserver {
                         message.setMessageType (MessageType.LOGIN_FAIL);
                         oos.writeObject (message);
                         // 用户名和密码不正确，关闭连接(注意关闭的顺序）
+                        System.out.println ("用户名或密码不正确，关闭连接");
                         socket.close ();
                     }
             }
