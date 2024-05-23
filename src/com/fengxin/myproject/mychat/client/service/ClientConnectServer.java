@@ -2,11 +2,10 @@ package com.fengxin.myproject.mychat.client.service;
 
 import com.fengxin.myproject.mychat.commom.Message;
 import com.fengxin.myproject.mychat.commom.MessageType;
+import com.fengxin.myproject.mychat.commom.StreamUtilInputBytes;
 import com.fengxin.myproject.mychat.commom.User;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.io.*;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.util.Date;
@@ -16,12 +15,11 @@ import java.util.Date;
  * 客户端连接服务器端的相关操作
  **/
 public class ClientConnectServer {
-    private static User user;
     private static Socket socket;
     
     // 验证用户密码
     public static boolean verifyPassword(String userName,String password)  {
-        user = new User (userName,password);
+        User user = new User (userName , password);
         // 返回验证结果
         boolean check;
         try {
@@ -35,6 +33,12 @@ public class ClientConnectServer {
             // 进行验证并返回结果
             // 验证成功
             if(message.getMessageType ().equals (MessageType.LOGIN_SUCCESS)){
+                // 发送一个登录成功的消息到服务器
+                Message messageToServer = new Message ();
+                messageToServer.setSender (userName);
+                messageToServer.setMessageType (MessageType.LOGIN_FIRST);
+                ObjectOutputStream oosFirstLogin = new ObjectOutputStream (socket.getOutputStream ());
+                oosFirstLogin.writeObject (messageToServer);
                 check = true;
                 // 创建一个线程装载socket
                 ClientConnectServerThread ccst = new ClientConnectServerThread (socket);
@@ -46,9 +50,7 @@ public class ClientConnectServer {
                 socket.close ();
                 check = false;
             }
-            } catch (IOException e) {
-                throw new RuntimeException (e);
-            } catch (ClassNotFoundException e) {
+            } catch (IOException | ClassNotFoundException e) {
                 throw new RuntimeException (e);
             }
         // 返回验证结果
@@ -99,6 +101,30 @@ public class ClientConnectServer {
             throw new RuntimeException (e);
         }
     }
+    // 发送文件
+    public static void sendFile(String sender,String receiver,String content,String filePath) {
+        try {
+            // 将文件转化为字节数组
+            FileInputStream fis = new FileInputStream (filePath);
+            BufferedInputStream bis = new BufferedInputStream (fis);
+            byte[] bytes = StreamUtilInputBytes.toByteArray (bis);
+            // 拷贝到message
+            Message message = new Message ();
+            message.setFileBytes (bytes);
+            message.setSender (sender);
+            message.setReceiver (receiver);
+            message.setContent (content);
+            message.setTime (new Date ().toString ());
+            message.setMessageType (MessageType.FILE_MESSAGE);
+            // 发送文件到服务器
+            socket = ClientThreadMap.getClientThread (sender).getSocket ();
+            ObjectOutputStream oos = new ObjectOutputStream (socket.getOutputStream ());
+            oos.writeObject (message);
+            System.out.println ("文件" + message.getContent () + "发送成功");
+        } catch (IOException e) {
+            throw new RuntimeException (e);
+        }
+    }
     // 退出系统
     public static void logout(String userName) {
         System.out.println ("退出系统");
@@ -113,5 +139,4 @@ public class ClientConnectServer {
             throw new RuntimeException (e);
         }
     }
-    
 }

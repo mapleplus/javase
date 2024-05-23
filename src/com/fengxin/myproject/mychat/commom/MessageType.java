@@ -11,5 +11,8 @@ public interface MessageType {
     String RETURN_ONLINE_USER = "4";
     String COMMON_MESSAGE = "5";
     String COMMON_MESSAGE_ALL ="6";
+    String FILE_MESSAGE = "7";
+    String PUSH_MESSAGE = "8";
+    String LOGIN_FIRST = "9";
     String EXIT_LOGIN = "0";
 }

@@ -16,7 +16,6 @@ import java.util.concurrent.ConcurrentHashMap;
  * 连接客户端，验证用户
  **/
 public class Chatserver {
-    private ServerSocket serverSocket = null;
     // 使用一个集合，实现多用户的连接
     private static final ConcurrentHashMap<String,User> VALID_USERS = new ConcurrentHashMap<> ();
     // 服务器加载时，将用户放入集合中
@@ -35,11 +34,12 @@ public class Chatserver {
     }
     public  Chatserver(){
         // 一直监听客户端的连接
+        ServerSocket serverSocket = null;
         try {
             System.out.println ("等待客户端的连接");
             // 不能将9999写死，应该从配置文件中读取
             // 使用一个端口对应连接多个客户端，不能重复，即不能写入while，导致端口被占用
-            this.serverSocket = new ServerSocket (9999);
+            serverSocket = new ServerSocket (9999);
             while (true) {
                 // 连接客户端
                 Socket socket = serverSocket.accept ();
@@ -70,19 +70,16 @@ public class Chatserver {
                         socket.close ();
                     }
             }
-        } catch (IOException e) {
-            e.printStackTrace ();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace ();
+        } catch (IOException | ClassNotFoundException e) {
+            throw new RuntimeException (e);
         } finally {
             try {
                 if (serverSocket != null) {
                     serverSocket.close ();
                 }
             } catch (IOException e) {
-                e.printStackTrace ();
+                throw new RuntimeException (e);
             }
         }
-        
     }
 }

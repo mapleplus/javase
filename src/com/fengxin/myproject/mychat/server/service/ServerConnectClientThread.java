@@ -7,7 +7,8 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
-import java.util.Iterator;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
@@ -29,12 +30,54 @@ public class ServerConnectClientThread extends Thread
     }
     @Override
     public void run(){
-        while (true){
+        while (true) {
             try {
+                // 推送消息
+                Thread thread = new Thread (new pushMessage ());
+                thread.start ();
                 // 读取客户端发送的消息
                 ObjectInputStream ois = new ObjectInputStream (socket.getInputStream ());
                 Message message = (Message) ois.readObject ();
-                switch (message.getMessageType ()){
+                // 接收离线消息
+                // 获取发送端的接收者，存在则查看是否在线
+                if (message.getReceiver () != null) {
+                    Map<String, ServerConnectClientThread> map = ServerThreadMap.getMap ();
+                    Set<String> users = map.keySet ();
+                    boolean flag = false;
+                    // 如果接收者在线，则直接发送
+                    for (String user : users) {
+                        if (user.equals (message.getReceiver ())) {
+                            flag = true;
+                            break;
+                        }
+                    }
+                    // 接收者不在线，则暂存
+                    if (!flag) {
+                        ServerThreadMap.addOfflineMessage (message.getReceiver () , message);
+                        System.out.println ("接收消息用户" + message.getReceiver () + "离线，服务器暂存离线消息");
+                        // 缓存消息后，继续接收客户端请求
+                        continue;
+                    }
+                }
+                // 查看登录用户是否有离线消息
+                if (message.getMessageType ().equals (MessageType.LOGIN_FIRST)) {
+                    // 获取离线map
+                    Map<String, ArrayList<Message>> map = ServerThreadMap.getOfflineMessage ();
+                    // 离线消息不为空，则发送给客户端
+                    if (!map.isEmpty ()) {
+                        // 获取离线消息集合
+                        ArrayList<Message> messageToOffline = map.get (message.getSender ());
+                        for (Message value : messageToOffline) {
+                            ObjectOutputStream oosToOffline = new ObjectOutputStream (socket.getOutputStream ());
+                            oosToOffline.writeObject (value);
+                        }
+                        System.out.println ("服务器发送" + message.getSender () + "离线消息");
+                        // 发送完毕后，清空离线消息
+                        ServerThreadMap.removeOfflineMessage (message.getSender ());
+                    }
+                }
+                // 处理客户端发送的消息
+                switch (message.getMessageType ()) {
                     case MessageType.GET_ONLINE_USER:
                         // 获取在线用户列表
                         Message onlineUser = new Message ();
@@ -49,19 +92,28 @@ public class ServerConnectClientThread extends Thread
                     case MessageType.COMMON_MESSAGE:
                         // 发送私信给在线用户
                         ServerConnectClientThread serverConnectClientThread = ServerThreadMap.getThread (message.getReceiver ());
-                        ObjectOutputStream oosSendToOne = new ObjectOutputStream (serverConnectClientThread.getThreadSocket().getOutputStream ());
+                        ObjectOutputStream oosSendToOne = new ObjectOutputStream (serverConnectClientThread.getThreadSocket ().getOutputStream ());
                         oosSendToOne.writeObject (message);
+                        System.out.println ("服务器转发" + message.getSender () + "发送的私信给" + message.getReceiver ());
                         break;
                     case MessageType.COMMON_MESSAGE_ALL:
                         // 发送群消息
-                        Map<String,ServerConnectClientThread> threadMap = ServerThreadMap.getMap ();
+                        Map<String, ServerConnectClientThread> threadMap = ServerThreadMap.getMap ();
                         Set<String> receiverSet = threadMap.keySet ();
                         for (String receiver : receiverSet) {
-                            if(!receiver.equals (message.getSender ())) {
+                            // 排除发送者自己
+                            if (!receiver.equals (message.getSender ())) {
                                 ObjectOutputStream oosSendToAll = new ObjectOutputStream (ServerThreadMap.getThread (receiver).getThreadSocket ().getOutputStream ());
                                 oosSendToAll.writeObject (message);
                             }
                         }
+                        System.out.println ("服务器转发" + message.getSender () + "发送的群消息");
+                        break;
+                    case MessageType.FILE_MESSAGE:
+                        // 发送文件给在线用户
+                        ObjectOutputStream outputStream = new ObjectOutputStream (ServerThreadMap.getThread (message.getReceiver ()).getThreadSocket ().getOutputStream ());
+                        outputStream.writeObject (message);
+                        System.out.println ("服务器转发" + message.getSender () + "发送的文件给" + message.getReceiver ());
                         break;
                     case MessageType.EXIT_LOGIN:
                         // 用户退出登录
@@ -70,9 +122,7 @@ public class ServerConnectClientThread extends Thread
                         socket.close ();
                         return;
                 }
-            } catch (IOException e) {
-                throw new RuntimeException (e);
-            } catch (ClassNotFoundException e) {
+            } catch(IOException | ClassNotFoundException e){
                 throw new RuntimeException (e);
             }
         }

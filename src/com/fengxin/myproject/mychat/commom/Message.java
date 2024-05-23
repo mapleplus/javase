@@ -11,12 +11,20 @@ public class Message implements Serializable, MessageType {
     
     @Serial
     private static final long serialVersionUID = 1L;
-    private String sender;
-    private String receiver;
-    private String content;
-    private String time;
-    private String messageType;
+    private String sender = null;
+    private String receiver = null;
+    private String content = null;
+    private String time = null;
+    private String messageType = null;
+    private byte[] fileBytes = null;
     
+    public byte[] getFileBytes () {
+        return fileBytes;
+    }
+    
+    public void setFileBytes (byte[] fileBytes) {
+        this.fileBytes = fileBytes;
+    }
     public String getSender () {
         return sender;
     }
@@ -60,11 +68,4 @@ public class Message implements Serializable, MessageType {
     public Message () {
     }
     
-    public Message (String sender , String receiver , String content , String time , String messageType) {
-        this.sender = sender;
-        this.receiver = receiver;
-        this.content = content;
-        this.time = time;
-        this.messageType = messageType;
-    }
 }
