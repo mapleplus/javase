@@ -8,7 +8,7 @@ import java.util.HashSet;
  **/
 public class HashSet02 {
     public static void main (String[] args) {
-        HashSet hashSet = new HashSet ();
+        HashSet<String> hashSet = new HashSet<> ();
         hashSet.add ("feng");
         hashSet.add ("xin");
         hashSet.add ("feng");

@@ -8,7 +8,7 @@ import java.util.*;
  **/
 public class Methods01 {
     public static void main (String[] args) {
-        List list = new ArrayList ();
+        List<String> list = new ArrayList<> ();
         list.add ("apple");
         list.add ("pear");
         list.add ("banana");
@@ -25,7 +25,7 @@ public class Methods01 {
         Collections.sort (list);
         System.out.println ("自然排序后的顺序：" + list);
         //对元素进行自定义排序
-        Collections.sort (list , new Comparator () {
+        Collections.sort (list , new Comparator<Object> () {
             @Override
             public int compare (Object o1, Object o2) {
                 return ((String)o1).length () - ((String)o2).length ();

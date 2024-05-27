@@ -9,14 +9,14 @@ import java.util.ArrayList;
 public class ArrayList_Expand {
     public static void main (String[] args) {
         //无参构造方法创建ArrayList
-        ArrayList arrayList1 = new ArrayList ();
+        ArrayList<Integer> arrayList1 = new ArrayList<> ();
         for (int i = 0; i < 10; i++){
             arrayList1.add (i);
         }
         System.out.println ("arrayList1: " + arrayList1);
         
         //指定初始容量构造方法创建ArrayList
-        ArrayList arrayList2 = new ArrayList (8);
+        ArrayList<Integer> arrayList2 = new ArrayList<> (8);
         for (int i = 0; i < 10; i++){
             arrayList2.add (i);
         }

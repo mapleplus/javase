@@ -10,7 +10,7 @@ import java.util.Set;
  **/
 public class Map02 {
     public static void main (String[] args) {
-        Map map = new HashMap ();
+        Map<String,String> map = new HashMap<> ();
         map.put ("key1", "value1");
         map.put ("key2", "value2");
         // 当调用HashMap的entrySet()方法时，它会返回一个Set集合，

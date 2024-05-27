@@ -8,7 +8,7 @@ import java.util.Map;
  **/
 public class Map01 {
     public static void main (String[] args) {
-        Map map = new HashMap ();
+        Map<Object,Object> map = new HashMap<> ();
         // key一对一value,Map中key不允许重复，原因和HashSet一样，如果相同则会覆盖原数据
         map.put("key1", "value1");
         //value2覆盖value1

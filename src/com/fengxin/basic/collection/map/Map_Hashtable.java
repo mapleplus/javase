@@ -8,7 +8,7 @@ import java.util.Hashtable;
  **/
 public class Map_Hashtable {
     public static void main (String[] args) {
-        Hashtable hashtable = new Hashtable ();
+        Hashtable<String,String> hashtable = new Hashtable<> ();
         hashtable.put ("key1", "value1");
         hashtable.put ("key2", "value2");
         hashtable.put ("key3", "value3");

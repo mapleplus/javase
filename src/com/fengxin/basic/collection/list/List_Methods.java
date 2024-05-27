@@ -8,8 +8,8 @@ import java.util.List;
  **/
 public class List_Methods {
     public static void main (String[] args) {
-        List list1 = new ArrayList ();
-        List list2 = new ArrayList ();
+        List<Object> list1 = new ArrayList<> ();
+        List<Object> list2 = new ArrayList<> ();
         // 添加元素
         for (int i = 0; i < 5; i++){
             list1.add ("元素" + i);

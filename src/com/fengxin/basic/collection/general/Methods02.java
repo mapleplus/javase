@@ -7,7 +7,7 @@ import java.util.*;
  **/
 public class Methods02 {
     public static void main (String[] args) {
-        List list02 = new ArrayList ();
+        List<String> list02 = new ArrayList<> ();
         list02.add ("tom");
         list02.add ("merry");
         list02.add ("jack");

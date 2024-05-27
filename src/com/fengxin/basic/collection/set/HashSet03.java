@@ -11,7 +11,7 @@ import java.util.Objects;
  **/
 public class HashSet03 {
     public static void main (String[] args) {
-        HashSet hashSet = new HashSet();
+        HashSet<Object> hashSet = new HashSet<>();
         hashSet.add (new Employee ("张三" , 25));
         hashSet.add (new Employee ("李四" , 28));
         hashSet.add (new Employee ("张三" , 25));

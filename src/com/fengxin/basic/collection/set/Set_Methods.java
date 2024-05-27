@@ -10,7 +10,7 @@ import java.util.Set;
  **/
 public class Set_Methods {
     public static void main (String[] args) {
-        Set set = new HashSet ();
+        Set<String> set = new HashSet<> ();
         // 添加元素
         set.add ("元素1");
         set.add ("元素2");
