@@ -1,13 +1,10 @@
-package com.fengxin.data_structures_and_algorithms;
-
-import java.util.HashSet;
-import java.util.Set;
+package com.fengxin.data_structures_and_algorithms.string;
 
 /**
  * @author FENGXIN
+ * 力扣151
  **/
-
-public class Solution {
+public class TeverseWords {
     public static void main (String[] args) {
         String s = "a good   example";
         System.out.println (reverseWords (s));
@@ -52,8 +49,4 @@ public class Solution {
         }
         return result.toString();
     }
-    
 }
-
-
-
