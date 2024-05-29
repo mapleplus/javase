@@ -2,7 +2,7 @@ package com.fengxin.javase.wrapper;/**
  * @author FENGXIN
  * @data 2024.4.28
  **/
-
+@SuppressWarnings ({"all"})
 public class Wrapper_Class {
     Boolean b;
     Character c;

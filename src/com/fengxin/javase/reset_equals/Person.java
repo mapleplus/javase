@@ -1,5 +1,8 @@
 package com.fengxin.javase.reset_equals;
 
+/**
+ * @author FENGXIN
+ */
 public class Person {
     private String name;
     private int age;

@@ -1,5 +1,7 @@
 package com.fengxin.javase.override;
-//子类 重写父类方法
+/**
+ * @author FENGXIN
+ */ //子类 重写父类方法
 public class Student extends Person {
     private final int id;
     private final double score;

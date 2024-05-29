@@ -1,5 +1,8 @@
 package com.fengxin.javase.extend;
 
+/**
+ * @author FENGXIN
+ */
 public class Dynamic_Binding {
     public static void main(String[] args) {
         A a = new B();

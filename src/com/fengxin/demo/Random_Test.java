@@ -3,6 +3,9 @@ package com.fengxin.demo;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * @author FENGXIN
+ */
 public class Random_Test {
     public static void main(String[] args) {
 //        生成随机数

@@ -13,7 +13,7 @@ public class Collection_Traverse {
         Book book1 = new Book ("Java", 10.99);
         Book book2 = new Book ("C++", 15.99);
         Book book3 = new Book ("Python", 12.99);
-        Collection collection = new ArrayList ();
+        Collection<Book> collection = new ArrayList<> ();
         collection.add (book1);
         collection.add (book2);
         collection.add (book3);
@@ -41,11 +41,11 @@ public class Collection_Traverse {
 }
 class Book{
     private String name;
-    private double Price;
+    private double price;
     
     public Book (String name , double price) {
         this.name = name;
-        Price = price;
+        this.price = price;
     }
     
     public String getName () {
@@ -57,10 +57,10 @@ class Book{
     }
     
     public double getPrice () {
-        return Price;
+        return price;
     }
     
     public void setPrice (double price) {
-        Price = price;
+        this.price = price;
     }
 }

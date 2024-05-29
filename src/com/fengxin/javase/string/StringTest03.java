@@ -8,6 +8,7 @@ package com.fengxin.javase.string;
  *         return new Integer(i);
  *     }
  **/
+@SuppressWarnings ({"all"})
 public class StringTest03 {
     public static void main (String[] args) {
         Integer i1 = new Integer(10);

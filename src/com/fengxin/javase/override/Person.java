@@ -1,5 +1,7 @@
 package com.fengxin.javase.override;
-//父类
+/**
+ * @author FENGXIN
+ */ //父类
 public class Person {
     private final String name;
     private final int age;

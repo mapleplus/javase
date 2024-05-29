@@ -1,5 +1,8 @@
 package com.fengxin.demo;
 
+/**
+ * @author FENGXIN
+ */
 public class String_Study {
     public static void main(String[] args) {
         String string = "JAVA是一门编程语言";

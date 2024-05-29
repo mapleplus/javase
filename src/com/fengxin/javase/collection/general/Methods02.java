@@ -35,7 +35,7 @@ public class Methods02 {
         // frequency
         list02.add ("john");
         System.out.println ("list02中john的个数：" + Collections.frequency (list02 , "john"));
-        List listCopy = new ArrayList ();
+        List<String> listCopy = new ArrayList<> ();
         // copy
         for (int i = 0 ; i < list02.size () ; i++) {
             listCopy.add ("");

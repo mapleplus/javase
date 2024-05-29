@@ -29,6 +29,7 @@ package com.fengxin.javase.wrapper;
         return new Integer(i);
     }
 */
+    @SuppressWarnings ({"all"})
 public class Interger_Test {
     public static void main (String[] args) {
         Integer i1 = new Integer (10);

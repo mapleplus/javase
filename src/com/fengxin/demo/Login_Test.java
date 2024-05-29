@@ -2,6 +2,9 @@ package com.fengxin.demo;
 //登录密码小DEMO
 import java.util.Scanner;
 
+/**
+ * @author FENGXIN
+ */
 public class Login_Test {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

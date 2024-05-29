@@ -3,7 +3,7 @@ package com.fengxin.javase.wrapper;
  * @author FENGXIN
  * 包装类的装箱和拆箱
  **/
-
+@SuppressWarnings ({"all"})
 public class IntegerType_Transform {
     public static void main(String[] args) {
         //    jdk5以前，手动装、拆箱
