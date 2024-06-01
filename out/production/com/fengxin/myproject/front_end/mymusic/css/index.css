@@ -1,0 +1,752 @@
+/* 基础设置 版心 */
+
+.container {
+    width: 1190px;
+    margin: 0 auto;
+}
+input:focus {
+    /* 获取焦点 用鼠标、TAB 回车等选中后的样式 */
+    font-size: 20px;
+}
+
+/* 基础设置 版心 */
+/* 顶部导航条开始 */
+
+.topbar {
+    height: 50px;
+    background-color: #ECECEC;
+}
+.welcome {
+    /* 使文本垂直居中 */
+    height: 50px;
+    line-height: 50px;
+    font-size: 0;
+    color: rgba(0, 0, 255, 0.88);
+}
+.welcome .hello {
+    /* 盒子和父元素内容区左边距离 */
+    margin-right: 25px;
+}
+.welcome span, .welcome a {
+    /* 设置字体格式 */
+    font-size: 20px;
+}
+.welcome .login {
+    /* 内容区和边框距离，使边框隔开登录和注册 */
+    padding-right: 10px;
+    border-right: 2px solid green;
+    /* 去掉超链接下划线 */
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.88);
+}
+.welcome .register {
+    /* 竖线边框距离 */
+    margin-left: 10px;
+    /* 去掉超链接下划线 */
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.88);
+}
+.welcome .register:hover {
+    color: rgba(0, 150, 0, 0.5);
+}
+.welcome .login:hover {
+    color: rgba(0, 150, 0, 0.5);
+}
+
+/* 顶部导航条结束 */
+/* 头部开始 */
+
+.header {
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+}
+.header img {
+    height: 120px;
+}
+.header .search form {
+    margin-top: 40px;
+    font-size: 0;
+}
+.header .search input {
+    width: 510px;
+    height: 40px;
+    border: rgba(0, 0, 240,0.88) solid 2px;
+    border-radius: 10px;
+}
+.header .search button {
+    width: 100px;
+    height: 46px;
+    border:  solid 2px;
+    /* 使元素顶部和所在行顶部对齐 */
+    vertical-align: top;
+    font-size: 18px;
+    background-color: rgba(0, 0, 255, 0.88);;
+    border-radius: 10px;
+    color: #ECECEC;
+}
+
+/* 头部结束 */
+/* 主导航开始 */
+
+.main-nav {
+    /* 导航栏高度和下边框 */
+    height: 50px;
+    border-bottom: 1px solid skyblue;
+}
+.main-nav .all-types {
+    height: 50px;
+    width: 120px;
+    background-color:rgba(0, 0, 255, 0.88);
+    /* 行高 */
+    line-height: 50px;
+    /* 文本水平居中 */
+    text-align: center;
+    color: #ECECEC;
+    /* 加圆角弧度 */
+    border-radius: 10px;
+}
+.main-nav-list li {
+    float: left;
+    /* 去掉标签默认符号 */
+   list-style-type: none;
+   margin: 0 60px; 
+}
+.main-nav-list li a {
+    /* 去掉超链接下划线 */
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.88);
+}
+.main-nav-list {
+    /* 单行文字垂直居中 */
+    height: 50px;
+    line-height: 50px;
+}
+.main-nav-list li a:hover {
+    color: rgba(0, 150, 0, 0.5);
+}
+
+/* 主导航结束 */
+/* 内容区 开始*/
+
+.main-content-top .bantop {
+    /* 标题高度和距离顶部距离 */
+    height: 50px;
+    margin-top: 20px;
+}
+.bantop .banner-1-top {
+    color: rgba(0, 0, 255, 0.88);
+    /* 文本水平居中 */
+    text-align: center;
+    font-size: 30px;
+}
+.banner-1 a {
+    /* 去掉超链接下划线 */
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.88);
+}
+.banner-1 a:hover{
+    color: rgba(0, 150, 0, 0.5);
+}
+.main-content .mpic1 {
+    /* 图片div */
+    height: 200px;
+    width: 200px;
+    margin-left: 35px;
+    margin-top: 20px; 
+}
+.main-content .mpic1 img {
+    /* 图片属性 */
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
+    /* 图片圆角过渡时间 */
+    transition: all 0.7s;
+}
+.main-content .mpic1 img:hover {
+    /* 鼠标选中开始动态变换圆角 */
+    border-radius: 50%;
+}
+/* 列表，用于超链接 */
+.main-content .lists {
+    height: 20px;
+}
+.main-content .banner-1 .list1 {
+    float: left;
+    /* 去掉列表符号 */
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 30px;
+    font-size: 15px;
+}
+.main-content .banner-1 .list2 {
+    float: left;
+    /* 去掉列表符号 */
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 25px;
+    font-size: 15px;
+}
+.main-content .banner-1 .list3 {
+    float: left;
+    /* 去掉列表符号 */
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 50px;
+    font-size: 15px;
+}
+.main-content .banner-1 .list4 {
+    float: left;
+    /* 去掉列表符号 */
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 60px;
+    font-size: 15px;
+}
+.main-content .banner-1 .list5 {
+    float: left;
+    /* 去掉列表符号 */
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 40px;
+    font-size: 15px;
+}
+
+/* 内容区 结束*/
+/* 排行榜 开始*/
+
+.main-rank-top {
+    height: 50px;
+    margin-top: 30px;
+}
+.rantop .banner-2-top {
+    color: rgba(0, 0, 255, 0.88);
+    text-align: center;
+    margin: 0 auto;
+    font-size: 30px;
+}
+.main-ranking .banner-2 {
+    height: 500px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+.main-ranking .rank1 {
+    background-image: url(../image/m9.jpg);
+}
+.main-ranking .rank2 {
+    background-image: url(../image/p3.jpeg);
+
+}
+.main-ranking .rank3 {
+    background-image: url(../image/m7.jpeg);
+}
+.main-ranking .rank4 {
+    background-image: url(../image/p5.jpeg);
+}
+.main-ranking .rank5 {
+    background-image: url(../image/p7.jpeg);
+}
+/* title-巅峰榜 */
+.main-ranking .ranklisttop1,
+.ranklisttop2,
+.ranklisttop3,
+.ranklisttop4,
+.ranklisttop5
+ {
+    font-size: 25px;
+    text-align: center;
+}
+/* 音乐类型 */
+.main-ranking .ranktopclass1,
+.ranktopclass2,
+.ranktopclass3,
+.ranktopclass4,
+.ranktopclass5
+ {
+    font-size: 25px;
+    text-align: center;
+}
+.main-ranking .ranklisttop1 a {
+    text-decoration: none;
+    color: #ECECEC;
+}
+.main-ranking .ranklisttop2 a {
+    text-decoration: none;
+    color: #ECECEC;
+}
+.main-ranking .ranklisttop3 a {
+    text-decoration: none;
+    color: #ECECEC;
+}
+.main-ranking .ranklisttop4 a {
+    text-decoration: none;
+    color: #ECECEC;
+}
+.main-ranking .ranklisttop5 a {
+    text-decoration: none;
+    color: #ECECEC;
+}
+.main-ranking .ranktopclass1 a {
+    text-decoration: none;
+    color: #ECECEC;
+}
+.main-ranking .ranktopclass2 a {
+    text-decoration: none;
+    color: #ECECEC;
+}
+.main-ranking .ranktopclass3 a {
+    text-decoration: none;
+    color: #ECECEC;
+}
+.main-ranking .ranktopclass4 a {
+    text-decoration: none;
+    color: #ECECEC;
+}
+.main-ranking .ranktopclass5 a {
+    text-decoration: none;
+    color: #ECECEC;
+}
+.main-ranking .ranklisttop1 a:hover {
+    color: gold;
+}
+.main-ranking .ranklisttop2 a:hover {
+    color: gold;
+}
+.main-ranking .ranklisttop3 a:hover {
+    color: gold;
+}
+.main-ranking .ranklisttop4 a:hover {
+    color: gold;
+}
+.main-ranking .ranklisttop5 a:hover {
+    color: gold;
+}
+.main-ranking .ranktopclass1 a:hover {
+    color: gold;
+}
+.main-ranking .ranktopclass2 a:hover {
+    color: gold;
+}
+.main-ranking .ranktopclass3 a:hover {
+    color: gold;
+}
+.main-ranking .ranktopclass4 a:hover {
+    color: gold;
+}
+.main-ranking .ranktopclass5 a:hover {
+    color: gold;
+}
+/* 排名 */
+.main-ranking .banner-2 .ranklist1,
+.ranklist2,
+.ranklist3{
+    font-size: 15px;
+    margin-left: 15%;
+}
+.main-ranking .banner-2 .ranklist1 a {
+    /* 去掉超链接下划线 */
+    text-decoration: none;
+    color: #ECECEC;
+}
+.main-ranking .banner-2 .ranklist2 a {
+    /* 去掉超链接下划线 */
+    text-decoration: none;
+    color: #ECECEC;
+}
+.main-ranking .banner-2 .ranklist3 a {
+    /* 去掉超链接下划线 */
+    text-decoration: none;
+    color: #ECECEC;
+}
+.main-ranking .banner-2 .ranklist1 a:hover {
+    color: gold;
+}
+.main-ranking .banner-2 .ranklist2 a:hover {
+    color: gold;
+}
+.main-ranking .banner-2 .ranklist3 a:hover {
+    color: gold;
+}
+.main-ranking .banner-2 .ranklist1 {
+    margin-top: 150px;
+}
+.main-ranking .banner-2 .ranklist2 {
+    margin-top: 50px;
+}
+.main-ranking .banner-2 .ranklist3 {
+    margin-top: 70px;
+}
+
+/* 排行榜 结束*/
+/* 新碟首发 开始 */
+
+/* 第一行 */
+
+.newmusic-content-top {
+    height: 50px;
+    margin-top: 30px;
+}
+.newtop .banner-3-top {
+    color: rgba(0, 0, 255, 0.88);
+    text-align: center;
+    margin: 0 auto;
+    font-size: 30px;
+}
+.newmusic-content .mpic3 {
+    /* 图片div样式 */
+    height: 200px;
+    width: 200px;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+.newmusic-content .mpic3 img {
+    /* 图片属性 */
+    height: 200px;
+    width: 200px;
+    /* 圆角弧度 */
+    border-radius: 10%;
+    /* 过渡 */
+    transition: all 0.7s;
+}
+.newmusic-content .mpic3 img:hover {
+    /* 鼠标选中开始圆角弧度动态 */
+    border-radius: 50%;
+}
+/* 列表，用于超链接 */
+.newmusic-content.lists {
+    height: 20px;
+}
+.newmusic-content .banner-3 .list1 {
+    float: left;
+    /* 去掉列表符号 */
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 15px; 
+    font-size: 15px;
+}
+.newmusic-content .banner-3 .list2 {
+    float: left;
+    /* 去掉列表符号 */
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 40px;
+    font-size: 15px;
+}
+.newmusic-content .banner-3 .list3 {
+    float: left;
+    /* 去掉列表符号 */
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 40px;
+    font-size: 15px;
+}
+.newmusic-content .banner-3 .list4 {
+    float: left;
+    /* 去掉列表符号 */
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 50px;
+    font-size: 15px;
+}
+.newmusic-content .banner-3 .list5 {
+    float: left;
+    /* 去掉列表符号 */
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 65px;
+    font-size: 15px;
+}
+.banner-3 .lists .list1 a {
+     /* 去掉超链接下划线 */
+     text-decoration: none;
+     color: rgba(0, 0, 255, 0.88);
+     padding-left: 18px;
+}
+.banner-3 .lists .list2 a {
+    /* 去掉超链接下划线 */
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.88);
+    padding-left: 120px;
+}
+.banner-3 .lists .list3 a {
+    /* 去掉超链接下划线 */
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.88);
+    padding-left: 180px;
+}
+.banner-3 .lists .list4 a {
+    /* 去掉超链接下划线 */
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.88);
+    padding-left: 110px;
+}
+.banner-3 .lists .list5 a {
+    /* 去掉超链接下划线 */
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.88);
+    padding-left: 125px;
+}
+.banner-3 .lists .list1 a:hover {
+    color: rgba(0, 150, 0, 0.5);
+}
+.banner-3 .lists .list2 a:hover {
+    color: rgba(0, 150, 0, 0.5);
+}
+.banner-3 .lists .list3 a:hover {
+    color: rgba(0, 150, 0, 0.5);
+}
+.banner-3 .lists .list4 a:hover {
+    color: rgba(0, 150, 0, 0.5);
+}
+.banner-3 .lists .list5 a:hover {
+    color: rgba(0, 150, 0, 0.5);
+}
+
+/* 第二行 */
+
+.newmusic-content2 .mpic3-2 {
+    /* 图片div样式 */
+    height: 200px;
+    width: 200px;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+.newmusic-content2 .mpic3-2 img {
+    /* 图片属性样式 */
+    height: 200px;
+    width: 200px;
+    /* 圆角弧度 */
+    border-radius: 10%;
+    /* 过渡时间 */
+    transition: all 0.7s;
+}
+.newmusic-content2 .mpic3-2 img:hover {
+    /* 鼠标选中开始圆角动态 */
+    border-radius: 50%;
+}
+/* 列表，用于超链接 */
+.newmusic-content2.lists {
+    height: 20px;
+}
+.newmusic-content2 .banner-3 .list1-2 {
+    float: left;
+    /* 去掉列表符号 */
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 13px;
+    font-size: 15px;
+}
+.newmusic-content2 .banner-3 .list2-2 {
+    float: left;
+    /* 去掉列表符号 */
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 40px;
+    font-size: 15px;
+}
+.newmusic-content2 .banner-3 .list3-2 {
+    float: left;
+    /* 去掉列表符号 */
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 40px;
+    font-size: 15px;
+}
+.newmusic-content2 .banner-3 .list4-2 {
+    float: left;
+    /* 去掉列表符号 */
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 55px;
+    font-size: 15px;
+}
+.newmusic-content2 .banner-3 .list5-2 {
+    float: left;
+    /* 去掉列表符号 */
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 50px;
+    font-size: 15px;
+}
+.banner-3 .lists .list1-2 a {
+     /* 去掉超链接下划线 */
+     text-decoration: none;
+     color: rgba(0, 0, 255, 0.88);
+     padding-left: 18px;
+}
+.banner-3 .lists .list2-2 a {
+    /* 去掉超链接下划线 */
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.88);
+    padding-left: 70px;
+}
+.banner-3 .lists .list3-2 a {
+    /* 去掉超链接下划线 */
+    text-decoration: none;
+   color: rgba(0, 0, 255, 0.88);
+    padding-left: 130px;
+}
+.banner-3 .lists .list4-2 a {
+    /* 去掉超链接下划线 */
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.88);
+    padding-left: 90px;
+}
+.banner-3 .lists .list5-2 a {
+    /* 去掉超链接下划线 */
+    text-decoration: none;
+    color: rgba(0, 0, 240,0.88);
+    padding-left: 125px;
+}
+.banner-3 .lists .list1-2 a:hover {
+    color: rgba(0, 150, 0, 0.5);
+}
+.banner-3 .lists .list2-2 a:hover {
+    color: rgba(0, 150, 0, 0.5);
+}
+.banner-3 .lists .list3-2 a:hover {
+    color: rgba(0, 150, 0, 0.5);
+}
+.banner-3 .lists .list4-2 a:hover {
+    color: rgba(0, 150, 0, 0.5);
+}
+.banner-3 .lists .list5-2 a:hover {
+    color: rgba(0, 150, 0, 0.5);
+}
+
+/* 新碟首发 结束 */
+/* footer开始 */
+
+.footer {
+    height: 700px;
+    background-color: #483e3e;
+    margin-top: 100px;
+    margin-left: 35px;
+}
+.footer-top-more-music {
+    width: 100px;
+    font-size: 25px;
+    color:rgba(200, 200, 200, 0.9);
+    padding-top: 5%;
+    margin-left: 40px;
+}
+.footer-top-more-study {
+    width: 100px;
+    font-size: 25px;
+    color:rgba(200, 200, 200, 0.9);
+    padding-top: 10%;
+    margin-left: 40px;
+}
+.footer-top-more-app {
+    width: 100px;
+    font-size: 20px;
+    color:rgba(200, 200, 200, 0.9);
+    margin-top: 0;
+    margin-left: 81%;
+}
+.top-footer .footer-music li{
+    font-size: 18px;
+    /* 去掉列表符号 */
+    list-style-type: none;
+    float: left;
+    padding-top: 8%;
+    margin-left: 40px;
+    width: 90px;
+}
+.top-footer .footer-music li a {
+    text-decoration: none;
+    color:rgba(200, 200, 200, 0.9);
+}
+.top-footer .footer-music li a:hover {
+    color: gold;
+}
+.top-footer .footer-study li {
+    font-size: 18px;
+    float: left;
+    list-style-type: none;
+    padding-top: 8%;
+    margin-left: 40px;
+    width: 90px;
+}
+.top-footer .footer-study li a {
+    color:rgba(200, 200, 200, 0.9);
+    text-decoration: none;
+}
+.top-footer .footer-study li a:hover {
+    color: gold;
+}
+.top-footer .footer-app li{
+    font-size: 18px;
+    /* 去掉列表符号 */
+    list-style-type: none;
+    /* float: left; */
+    margin-top: 5%;
+    width: 100px;
+    padding-right: 120px;
+    
+}
+.top-footer .footer-app li a {
+    text-decoration: none;
+    color:rgba(200, 200, 200, 0.9);
+}
+.top-footer .footer-app li a:hover {
+    color: gold;
+}
+
+/* 分割线开始 */
+
+.hr-footer {
+    height: 1px;
+    width: 93%;
+    background-color: #584D4D;
+    margin-top: 15%;
+}
+
+/* 分割线结束 */
+
+.footer {
+    height: 700px;
+}
+.footer-information-title {
+    width: 100px;
+    font-size: 25px;
+    color:rgba(200, 200, 200, 0.9);
+    padding-top: 5%;
+    margin: 0 auto;
+}
+.bottom-footer .footer-information {
+    font-size: 15px;
+    float: left;
+    list-style-type: none;
+    padding-top: 5%;
+    height: 40px;
+    margin-left: 33%;
+}
+.bottom-footer .footer-information a {
+    text-decoration: none;
+    color:rgba(200, 200, 200, 0.9);
+}
+.bottom-footer .footer-information a:hover {
+    color: gold;
+}
+
+
+/* footer结束 */
+
+/* 昵称开始 */
+.welcome-my {
+    color: rgba(0, 0, 240,0.88);
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+}
+/* 昵称结束 */
+/* 头像开始 */
+.touxiang {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-top: 0px;
+    vertical-align: middle;
+}
+/* 头像结束 */

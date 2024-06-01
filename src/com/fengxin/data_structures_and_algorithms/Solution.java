@@ -1,7 +1,6 @@
 package com.fengxin.data_structures_and_algorithms;
 
-import java.util.HashSet;
-import java.util.Set;
+
 
 /**
  * @author FENGXIN
@@ -9,50 +8,34 @@ import java.util.Set;
 
 public class Solution {
     public static void main (String[] args) {
-        String s = "a good   example";
-        System.out.println (reverseWords (s));
+        String s1 = "abacababacab";
+        System.out.println (repeatedSubstringPattern (s1));
     }
-    public static String reverseWords(String s) {
-        char[] ch = s.toCharArray();
-        StringBuilder result = new StringBuilder();
-        // 先过滤前导空格
+    public static boolean repeatedSubstringPattern(String s) {
+        int[] next = getNext (s);
+        int repeatLen = s.length () - next[s.length () - 1];
+        return next[s.length () - 1] != 0 && s.length () % repeatLen == 0;
+    }
+    //next数组
+    public static int[] getNext(String s){
+        int[] next = new int[s.length ()];
+        next[0] = 0;
+        // 前缀末尾
         int i = 0;
-        while(ch[i] == ' '){
-            i++;
-        }
-        StringBuilder sb = new StringBuilder();
-        //添加单词 反转单词
-        boolean flag = false;
-        while(i < s.length()){
-            while(i < s.length() && ch[i] != ' '){
-                sb.append(ch[i]);
+        // 后缀末尾
+        int j = 1;
+        // 遍历后缀
+        for(; j < s.length (); j++){
+            while(i > 0 && s.charAt (i) != s.charAt (j)){
+                i = next[i - 1];
+            }
+            if(s.charAt (i) == s.charAt (j)){
                 i++;
-                flag = true;
             }
-            if(flag) {
-                sb.append (' ');
-                flag = false;
-            }
-            i++;
+            next[j] = i;
         }
-        String[] str = sb.toString().split (" ");
-        for(int j = 0,k = str.length - 1; j < k; j++, k--){
-            String temp = str[j];
-            str[j] = str[k];
-            str[k] = temp;
-        }
-        i = 0;
-        while ( i < str.length){
-            result.append (str[i]);
-            if(i == str.length - 1){
-                break;
-            }
-            result.append (" ");
-            i++;
-        }
-        return result.toString();
+        return next;
     }
-    
 }
 
 

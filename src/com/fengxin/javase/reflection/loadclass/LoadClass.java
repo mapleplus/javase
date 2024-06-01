@@ -10,7 +10,7 @@ import java.util.Scanner;
  **/
 public class LoadClass {
     public static void main (String[] args) throws ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
-        int flag = 0;
+        int flag;
         Scanner sc = new Scanner(System.in);
         System.out.println ("请输入1或2");
         flag = sc.nextInt ();
