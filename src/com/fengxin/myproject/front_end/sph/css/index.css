@@ -1,0 +1,184 @@
+/* 版心 */
+    .container {
+        width: 1190px;
+        margin: 0 auto;
+        font-size: 12px;
+    }
+/* 导航条 */
+    .topbar {
+        height: 30px;
+        background-color: #ECECEC;
+        color: #666;
+    }
+    .topbar .left {
+        height: 30px;
+        line-height: 30px;
+        font-size: 0;
+    }
+    .welcome,
+    .login,
+    .sign {
+        font-size: 12px;
+    }
+    .welcome {
+        margin-right: 28px;
+    }
+    .login {
+        padding-right: 10px;
+        border-right: 1px solid #666;
+    }
+    .sign {
+        padding-left: 10px;
+    }
+    /* 右导航 */
+    .topbar .right .nav {
+        height: 30px;
+        line-height: 30px;
+        font-size: 0;
+    }
+    .topbar .right .nav li {
+        float: left;
+    }
+    .topbar .right .nav li a {
+        font-size: 12px;
+        padding: 0 15px;
+        border-right: 1px solid #666;
+    }
+    .topbar .right .nav li:first-child a {
+        padding-left: 0;
+    }
+    .topbar .right .nav li:last-child a {
+        padding-right: 0;
+        border: 0;
+    }
+/* 导航条end */
+/* 头部 */
+    .header {
+        height: 120px;
+    }
+    .header .search form {
+        margin-top: 42px;
+        font-size: 0;
+    }
+    .header .search input{
+        width: 508px;
+        height: 34px;
+        border: 1px solid #DD302D;
+    }
+    .header .search button {
+        width: 80px;
+        height: 36px;
+        background-color: #DD302D;
+        vertical-align: bottom;
+        background-image: url(../image/serch_icon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+/* 头部end */
+/* 分类导航 */
+    .all-type .type {
+        width: 190px;
+        height: 48px;
+        background-color: #DD302D;
+        text-align: center;
+        line-height: 48px;
+        color: #FFF;
+        font-size: 16px;
+    }
+    .all-type .all li {
+        float: left;
+        margin: 0 10px;
+        font-size: 16px;
+        color: #333;
+        line-height: 48px;
+    }
+/* 分类导航end */
+/* 内容区1 */
+    .content-main {
+        height: 458px;
+        margin: 10px 0;
+        font-size: 0;
+    }
+    /* 侧边栏 */
+    .content-main .slid-nav {
+        width: 190px;
+        height: 458px;
+        background-color: #F4F4F4;
+        margin-right: 10px;
+    }
+    .content-main .slid-nav li {
+        height: 28px;
+        line-height: 28px;
+        padding-left: 16px;
+        font-size: 14px;
+    }
+    .content-main .slid-nav ul li:first-child {
+        padding-top: 9px;
+    }
+    .content-main .slid-nav ul li:last-child {
+        padding-bottom: 9px;
+    }
+    .content-main .slid-nav a {
+        color: #333;
+    }
+    .content-main .slid-nav li:hover {
+        background-color: #DD302D;
+    }
+    .content-main .slid-nav li:hover>a {
+        color: #FFF;
+    }
+    .content-main .slid-nav li {
+        position: relative;
+    }
+    .content-main .slid-nav .second-menu {
+        width: 670px;
+        height: 458px;
+        position: absolute;
+        top: 0;
+        left: 190px;
+        background-color: #E3E3E3;
+        padding-left: 30px;
+        display: none;
+    }
+    
+    .content-main .slid-nav .second-menu .second dt {
+        float: left;
+        width: 70px;
+        height: 20px;
+        line-height: 20px;
+        color: #000;
+        font-weight: bold;
+        margin-top: 8px;
+        margin-right: 8px;
+    }
+    .content-main .slid-nav .second-menu dl:first-child {
+        margin-top: 10px;
+    }
+    .content-main .slid-nav .second-menu .second dd{
+        float: left;
+        height: 20px;
+        line-height: 20px;
+        margin: 8px 0;
+    }
+    .content-main .slid-nav .second-menu .second a {
+        font-size: 14px;
+        padding: 0 10px;
+        border-left: 1px solid #999999;
+    }
+    .content-main .slid-nav li:hover .second-menu{
+        display: block;
+    }
+    /* banner-left */
+    .content-main .banner-left {
+        width: 690px;
+        height: 458px;
+        margin-right: 10px;
+    }
+
+    /* banner-right */
+    .content-main .banner-right {
+        width: 290px;
+        height: 458px;
+        background-color: blue;
+    }
+/* 内容区1end */
