@@ -179,6 +179,58 @@
     .content-main .banner-right {
         width: 290px;
         height: 458px;
-        background-color: blue;
+        
     }
+    .content-main .banner-right .top {
+        width: 288px;
+        height: 156px;
+        border: 1px solid #D9D9D9;
+    }
+    .content-main .banner-right .top .top-list {
+        height: 39px;
+        line-height: 39px;
+        margin: 0 14px;
+        border-bottom: 1px solid #D9D9D9;
+    }
+    .content-main .banner-right .top .news {
+        float: left;
+        color: #000;
+    }
+    .content-main .banner-right .top .more {
+        float: right;
+        color: #999999;
+    }
+    .content-main .banner-right .top .bottom-list li {
+        height: 26px;
+        line-height: 26px;
+        margin: 0 14px;
+    }
+
+
+    .content-main .banner-right .bottom {
+        width: 290px;
+        height: 290px;
+        margin-top: 10px;
+    }
+    .content-main .banner-right .bottom {
+        overflow: hidden;
+    }
+    .content-main .banner-right .bottom ul li {
+        width: 48px;
+        height: 70px;
+        float: left;
+        margin: 0 11px;
+        text-align: center;
+    }
+    .content-main .banner-right .bottom ul li:first-child {
+        margin-left: 16px;
+    }
+    .content-main .banner-right .bottom ul:first-child {
+        margin-top: 16px;
+    }
+    .content-main .banner-right .bottom ul:nth-child(2) {
+        margin: 17px 0;
+    }
+    
+
 /* 内容区1end */
