@@ -341,5 +341,53 @@
 /* 楼层end */
 
 /* 页脚 */
+    .footer {
+        background-color: #483E3E;
+        height: 440px;
+        margin-top: 48px;
+    }
+    .footer .container {
+        overflow: hidden;
+    }
+    .footer .top {
+        margin-top: 48px;
+        height: 176px;
+        background-color: yellow;
+    }
+    .footer .top .top-list1,
+    .footer .top .top-list2,
+    .footer .top .top-list3,
+    .footer .top .top-list4,
+    .footer .top .top-list5,
+    .footer .top .top-list6 {
+        width: 190px;
+        margin-right: 10px;
+        float: left;
+    }
+    .footer .top .top-list1 {
+        background-color: blueviolet;
+        height: 176px;
+    }
+    .footer .top .top-list2 {
+        background-color: skyblue;
+        height: 128px;
+    }
+    .footer .top .top-list3 {
+        background-color: blueviolet;
+        height: 128px;
+    }
+    .footer .top .top-list4 {
+        background-color: #483E3E;
+        height: 152px;
+    }
+    .footer .top .top-list5 {
+        background-color: #1a9be6;
+        height: 152px;
+    }
 
+    .footer .top .top-list6 {
+        height: 152px;
+        margin-right: 0;
+        background-color: orange;
+    }
 /* 页脚end */
