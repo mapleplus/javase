@@ -202,8 +202,6 @@
         line-height: 26px;
         margin: 0 14px;
     }
-
-
     .content-main .banner-right .bottom {
         width: 290px;
         height: 290px;
@@ -218,6 +216,10 @@
         float: left;
         margin: 0 11px;
         text-align: center;
+    }
+    .content-main .banner-right .bottom ul li a {
+        font-size: 14px;
+        color: #000;
     }
     .content-main .banner-right .bottom ul li:first-child {
         margin-left: 16px;
@@ -352,7 +354,6 @@
     .footer .top {
         margin-top: 48px;
         height: 176px;
-        background-color: yellow;
     }
     .footer .top .top-list1,
     .footer .top .top-list2,
@@ -363,31 +364,70 @@
         width: 190px;
         margin-right: 10px;
         float: left;
+        line-height: 25px;
     }
     .footer .top .top-list1 {
-        background-color: blueviolet;
+        background-color: #483E3E;
         height: 176px;
     }
+    .footer .top .top-list1 ul li a,
+    .footer .top .top-list2 ul li a,
+    .footer .top .top-list3 ul li a,
+    .footer .top .top-list4 ul li a,
+    .footer .top .top-list5 ul li a,
+    .footer .top .top-list6 ul li a {
+        font-size: 14px;
+        color: #FFF;
+    }
     .footer .top .top-list2 {
-        background-color: skyblue;
         height: 128px;
     }
     .footer .top .top-list3 {
-        background-color: blueviolet;
         height: 128px;
     }
     .footer .top .top-list4 {
-        background-color: #483E3E;
         height: 152px;
     }
     .footer .top .top-list5 {
-        background-color: #1a9be6;
         height: 152px;
     }
-
     .footer .top .top-list6 {
         height: 152px;
         margin-right: 0;
-        background-color: orange;
+    }
+/*  bottom  */
+    .footer .bottom {
+        margin-top: 22px;
+        border-top: 1px solid #584D4D;
+        overflow: hidden;
+    }
+    .footer .bottom .top-list {
+        margin-top: 47px;
+        height: 18px;
+    }
+    .footer .bottom .top-list ul {
+        margin-left: 100px;
+    }
+    .footer .bottom .top-list ul li {
+        float: left;
+    }
+    .footer .bottom .top-list ul li a {
+        font-size: 12px;
+        color: #FFF;
+        padding: 0 26px;
+        border-right: 1px solid #FFF;
+    }
+    .footer .bottom .top-list ul li:last-child a {
+        padding-right: 0;
+        border-right: 0;
+    }
+    .footer .bottom .other {
+        height: 18px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .footer .bottom .other a {
+        font-size: 12px;
+        color: #FFF;
     }
 /* 页脚end */
