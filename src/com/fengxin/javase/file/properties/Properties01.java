@@ -12,7 +12,7 @@ public class Properties01 {
         // 创建一个Properties对象
         Properties properties =  new Properties ();
         // 加载一个属性文件内容到Properties对象中
-        properties.load (new FileReader ("E:\\JAVA\\JAVA\\JAVASE\\src\\com\\fengxin\\basic\\file\\properties\\data.properties"));
+        properties.load (new FileReader ("src/com/fengxin/javase/file/properties/data.properties"));
         // 输出所有的属性到控制台
         properties.list (System.out);
         // 获取指定属性的值
