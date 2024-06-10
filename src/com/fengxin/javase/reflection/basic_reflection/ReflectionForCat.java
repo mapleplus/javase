@@ -18,7 +18,7 @@ public class ReflectionForCat {
         Properties properties = new Properties ();
         
         // 加载配置文件到Properties对象
-        properties.load (new FileInputStream ("E:\\JAVA\\JAVA\\JAVASE\\src\\com\\fengxin\\basic\\reflection\\basic_reflection\\reflection.properties"));
+        properties.load (new FileInputStream ("src/com/fengxin/javase/reflection/basic_reflection/reflection.properties"));
         
         // 从Properties对象中获取类名(包名.类名)和方法名
         String className = properties.getProperty ("className");
@@ -32,7 +32,7 @@ public class ReflectionForCat {
         Object o = cls.getDeclaredConstructor ().newInstance ();
         System.out.println (o.getClass ());
         
-        // 获取方法，通过cls得到加载类com.fengxin.basic.reflection.Cat的名为methodName的方法对象
+        // 获取方法，通过cls得到加载类com.fengxin.javase.reflection.Cat的名为methodName的方法对象
         Method method = cls.getMethod (methodName);
         
         // 调用类com.fengxin.basic.reflection.Cat对象的方法，通过method得到加载类的方法对象，调用invoke方法

@@ -13,7 +13,7 @@ import java.lang.reflect.Method;
 @SuppressWarnings ("all")
 public class Class_Methods {
     public static void main (String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchFieldException, NoSuchMethodException, InvocationTargetException {
-        String catPath = new String ("com.fengxin.basic.reflection.basic_reflection.Cat");
+        String catPath = new String ("com.fengxin.javase.reflection.basic_reflection.Cat");
         
         // 获取Class对象(加载类)
         Class<?> cls = Class.forName (catPath);

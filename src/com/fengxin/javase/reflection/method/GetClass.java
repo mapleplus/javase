@@ -9,7 +9,7 @@ import com.fengxin.javase.reflection.basic_reflection.Cat;
 public class GetClass {
     public static void main (String[] args) throws ClassNotFoundException {
         // 1.Class class = Class.forName(类名);
-        String classPath = "com.fengxin.basic.reflection.basic_reflection.Cat";
+        String classPath = "com.fengxin.javase.reflection.basic_reflection.Cat";
         Class<?> cls1 = Class.forName (classPath);
         System.out.println (cls1);
         

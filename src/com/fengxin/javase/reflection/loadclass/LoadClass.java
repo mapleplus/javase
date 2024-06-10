@@ -25,7 +25,7 @@ public class LoadClass {
                 // 动态加载
                 // 运行时才会报异常
                 Class<?> cls = Class.forName ("com.fengxin.javase.reflection.loadclass.Person");
-                Object obj = cls.newInstance ();
+                Object obj = cls.getDeclaredConstructor ().newInstance ();
                 Method method = cls.getMethod ("hi");
                 method.invoke (obj);
                 break;

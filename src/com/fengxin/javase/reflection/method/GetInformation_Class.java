@@ -12,7 +12,7 @@ import java.util.Arrays;
  **/
 public class GetInformation_Class {
     public static void main (String[] args) throws ClassNotFoundException {
-        String filePath = "com.fengxin.basic.reflection.basic_reflection.Cat";
+        String filePath = "com.fengxin.javase.reflection.basic_reflection.Cat";
         Class<?> cls = Class.forName (filePath);
         Field[] fields = cls.getDeclaredFields ();
         System.out.println ("---------------------------");

@@ -13,7 +13,7 @@ import java.util.Properties;
 public class ReflectionOptimize {
     public static void main (String[] args) throws IOException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException, InstantiationException {
         Properties properties = new Properties ();
-        properties.load (new FileInputStream ("E:\\JAVA\\JAVA\\JAVASE\\src\\com\\fengxin\\basic\\reflection\\basic_reflection\\reflection.properties"));
+        properties.load (new FileInputStream ("src/com/fengxin/javase/reflection/basic_reflection/reflection.properties"));
         String className = properties.getProperty ("className");
         String methodName = properties.getProperty ("methodName");
         
