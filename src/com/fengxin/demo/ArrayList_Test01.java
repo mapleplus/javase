@@ -2,6 +2,9 @@ package com.fengxin.demo;
 
 import java.util.ArrayList;
 
+/**
+ * @author FENGXIN
+ */
 public class ArrayList_Test01 {
     public static void main(String[] args) {
         ArrayList<String> list = new ArrayList<>();
@@ -17,7 +20,7 @@ public class ArrayList_Test01 {
             st = list.get(i);
             if (st.contains("枸杞")) {
                 list.remove(st);
-//                删除list后数据的位置往前移动，数据位置变1，i--保证删除成功
+                //删除list后数据的位置往前移动，数据位置变1，i--保证删除成功
                 i--;
             }
         }*/
