@@ -1,4 +1,4 @@
-package com.fengxin.data_structures_and_algorithms.stack;
+package com.fengxin.data_structures_and_algorithms.structure.stack;
 
 import java.util.Deque;
 import java.util.LinkedList;

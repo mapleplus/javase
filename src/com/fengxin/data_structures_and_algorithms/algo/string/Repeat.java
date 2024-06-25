@@ -1,4 +1,4 @@
-package com.fengxin.data_structures_and_algorithms.string;
+package com.fengxin.data_structures_and_algorithms.algo.string;
 
 /**
  * @author FENGXIN

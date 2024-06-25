@@ -1,4 +1,4 @@
-package com.fengxin.data_structures_and_algorithms.queue;
+package com.fengxin.data_structures_and_algorithms.structure.queue;
 
 
 import java.util.Deque;

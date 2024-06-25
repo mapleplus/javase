@@ -1,4 +1,4 @@
-package com.fengxin.data_structures_and_algorithms.array_linked;
+package com.fengxin.data_structures_and_algorithms.structure.array_linked;
 
 /**
  * 

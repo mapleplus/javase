@@ -1,4 +1,4 @@
-package com.fengxin.data_structures_and_algorithms.sort;
+package com.fengxin.data_structures_and_algorithms.algo.sort;
 
 /**
  * @author FENGXIN
