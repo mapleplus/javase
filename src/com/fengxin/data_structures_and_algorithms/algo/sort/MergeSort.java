@@ -6,6 +6,7 @@ package com.fengxin.data_structures_and_algorithms.algo.sort;
  **/
 public class MergeSort {
     public static void main (String[] args) {
+        // 二分归并排序
         int[] arr = {2,4,1,0,3,5};
         mergeSort (arr,0, arr.length - 1);
         for (int i : arr) {
@@ -21,7 +22,7 @@ public class MergeSort {
         int mid = (left + right) / 2;
         mergeSort (arr,left,mid);
         mergeSort (arr,mid + 1,right);
-        // 合并数组
+        // 有序合并数组
         merge (arr,left,mid,right);
     }
     public static void merge(int[] arr,int left,int mid,int right){
