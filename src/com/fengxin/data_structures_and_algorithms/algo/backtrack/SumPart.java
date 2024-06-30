@@ -10,6 +10,7 @@ import java.util.List;
 public class SumPart {
     static List<List<Integer>> res = new ArrayList<> ();
     public static void main (String[] args) {
+        // 和的所有不重复组合
         int[] nums = {3,4,5};
         int target = 9;
         sumPart(nums,target);

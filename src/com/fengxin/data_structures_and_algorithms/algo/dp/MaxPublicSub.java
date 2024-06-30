@@ -12,6 +12,7 @@ public class MaxPublicSub {
         System.out.println (dp (s1 , s2));
     }
     public static int dp(String s1,String s2){
+        // dp定义为最大公共子序列长度
         int[][] dp = new int[s1.length () + 1][s2.length () + 1];
         for (int i = 1 ; i <= s1.length () ; i++) {
             for (int j = 1 ; j <= s2.length () ; j++) {

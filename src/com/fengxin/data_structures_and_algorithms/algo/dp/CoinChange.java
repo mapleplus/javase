@@ -8,6 +8,7 @@ import java.util.Arrays;
  **/
 public class CoinChange {
     public static void main (String[] args) {
+        // 零钱兑换
         int[] coins = {1,2,5};
         int amount = 11;
         System.out.println (coinChange2 (coins , amount));
@@ -56,10 +57,11 @@ public class CoinChange {
         for (int i = 0 ; i < dp.length ; i++) {
             // 内层循环求解当前金额所需硬币数
             for (int coin : coins) {
-                // 子问题无解就跳过
+                // 子问题无解就跳过 剪枝
                 if(i - coin < 0){
                     continue;
                 }
+                
                 dp[i] = Math.min (res, 1 + dp[i - coin]);
             }
         }

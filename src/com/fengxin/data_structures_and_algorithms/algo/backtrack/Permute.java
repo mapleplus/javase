@@ -10,6 +10,7 @@ import java.util.List;
 public class Permute {
     static List<List<Integer>> res = new ArrayList<> ();
     public static void main (String[] args) {
+        // 全排列
         int[] nums = {1, 2, 3};
         List<Integer> state = new ArrayList<> ();
         boolean[] selected = new boolean[nums.length];
@@ -20,7 +21,7 @@ public class Permute {
         System.out.println (res);
     }
     public static void permute(int[] num,List<Integer> state,boolean[] selected){
-        // 排列完全
+        // 结束条件 排列完全
         if(state.size () == num.length){
             res.add (new ArrayList<> (state));
             return;

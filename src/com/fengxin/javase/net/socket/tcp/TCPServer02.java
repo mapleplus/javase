@@ -23,7 +23,6 @@ public class TCPServer02 {
         while ((len = inputStream.read (bytes)) != -1){
             System.out.println (new String (bytes, 0, len));
         }
-        
         // ----------------------------------------------------------------------
         // 服务器端发送数据给客户端
         OutputStream outputStream = socket.getOutputStream ();
@@ -31,7 +30,6 @@ public class TCPServer02 {
         // 结束标志
         socket.shutdownOutput ();
         // ----------------------------------------------------------------------
-        
         // 关闭资源
         inputStream.close ();
         socket.close ();
