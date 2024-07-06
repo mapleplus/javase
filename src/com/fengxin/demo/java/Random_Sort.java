@@ -1,4 +1,4 @@
-package com.fengxin.demo;
+package com.fengxin.demo.java;
 //随机排序数字
 import java.util.Random;
 import java.util.Scanner;

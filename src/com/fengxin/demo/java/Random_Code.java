@@ -1,4 +1,4 @@
-package com.fengxin.demo;
+package com.fengxin.demo.java;
 //生成随机验证码
 import java.util.Random;
 import java.util.Scanner;

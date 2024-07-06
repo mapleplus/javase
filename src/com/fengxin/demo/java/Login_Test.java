@@ -1,4 +1,4 @@
-package com.fengxin.demo;
+package com.fengxin.demo.java;
 //登录密码小DEMO
 import java.util.Scanner;
 

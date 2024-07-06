@@ -1,4 +1,4 @@
-package com.fengxin.demo;
+package com.fengxin.demo.java;
 
 import java.util.ArrayList;
 
