@@ -11,6 +11,7 @@ import java.util.Scanner;
 public class Nqueen {
     static List<List<String>> res = new ArrayList<> ();
     public static void main (String[] args) {
+        // N皇后
         int n;
         Scanner scanner = new Scanner (System.in);
         n = scanner.nextInt ();
@@ -27,14 +28,14 @@ public class Nqueen {
         dfs (state,0);
     }
     public static void dfs(List<String> state,int row){
-        // 结束条件
+        // 结束条件 全部行处理完成后
         if (state.size () == row) {
             res.add (new ArrayList<> (state));
             return;
         }
         // 处理选择 每一行中的每一列都是选择
         for (int col = 0 ; col < state.get (row).length () ; col++) {
-            // 判断是否符合添加皇后条件
+            // 判断是否符合添加皇后条件 剪枝
             if(!valid(state,row,col)){
                 continue;
             }
@@ -53,7 +54,7 @@ public class Nqueen {
     public static boolean valid(List<String> state, int row, int col){
         int i,j;
         // 处理小于row的皇后冲突
-        // 处理皇后直接冲突（行 列）
+        // 处理皇后直接冲突（列）
         for (i = 0 ; i < state.size () ; i++) {
             if (state.get (i).charAt (col) == 'Q') {
                 return false;

@@ -20,7 +20,6 @@ public class UdpReceive {
         socket.receive (packet);
         // 打印接收到的数据
         System.out.println ("接收到数据：" + new String (data,0,packet.getLength ()));
-        
         // 关闭Socket
         socket.close ();
     }

@@ -14,11 +14,11 @@ public class Polymorphic {
         computer.print();
         System.out.println ();
         // 接口类型的变量 object 可以指向实现了接口的类的对象实例
+        
         // 多态数组
         computer[] computers = new computer[2];
         computers[0] = new phone();
         computers[1] = new camera();
-        
         // 遍历数组
         for (com.fengxin.javase.interfaces.computer value : computers) {
             value.print ();
@@ -28,18 +28,17 @@ public class Polymorphic {
                 System.out.println ("-------------------------------");
             }
         }
+        
         // 多态传递
         System.out.println ();
         object object = new phone();
         object.hi();
-
     }
 }
 
 //object
 interface object {
     void hi();
-
 }
 
 //computer
@@ -51,10 +50,12 @@ interface computer extends object {
 //phone
 class phone implements computer {
     // phone 类实现了 object 接口，并实现了接口中的方法
+    @Override
     public void hi() {
         System.out.println("手机object");
     }
     // phone 类实现了 computer 接口，并实现了接口中的方法
+    @Override
     public void print() {
         System.out.println("手机在运行...");
 
@@ -69,10 +70,12 @@ class phone implements computer {
 
 class camera implements computer {
     // camera 类实现了 object 接口，并实现了接口中的方法
+    @Override
     public void hi() {
         System.out.println("相机object");
     }
     // camera 类实现了 computer 接口，并实现了接口中的方法
+    @Override
     public void print() {
         System.out.println("相机在运行...");
     }

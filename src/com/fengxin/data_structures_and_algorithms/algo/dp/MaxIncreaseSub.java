@@ -17,11 +17,11 @@ public class MaxIncreaseSub {
         int[] dp = new int[nums.length];
         // 每个元素递增序列大小至少为1
         Arrays.fill (dp,1);
-        // 截止当前的元素
+        // 截止当前i位置的元素
         for (int i = 0 ; i < nums.length ; i++) {
             // 找出比当前元素小的数据，得出当前元素为尾的最大递增序列
             for (int j = 0 ; j < i ; j++) {
-                if (nums[i] > nums[j]) {
+                if (nums[j] < nums[i]) {
                     dp[i] = Math.max (dp[i],dp[j] + 1);
                 }
             }

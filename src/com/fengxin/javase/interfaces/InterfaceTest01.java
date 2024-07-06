@@ -16,6 +16,4 @@ interface A {
     public static final int a = 10;
 }
 
-class B implements A {
-
-}
+class B implements A {}

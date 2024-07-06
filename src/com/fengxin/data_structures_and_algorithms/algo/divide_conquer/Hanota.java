@@ -12,12 +12,14 @@ public class Hanota {
         List<Integer> src = new ArrayList<> ();
         List<Integer> buffer = new ArrayList<> ();
         List<Integer> target = new ArrayList<> ();
+        // 小盘子在上
         for (int i = 3 ; i > 0 ; i--) {
             src.add (i);
         }
         solveHanota (src.size (),src,buffer,target);
     }
     public static void solveHanota(int num,List<Integer> src,List<Integer> buffer,List<Integer> target){
+        // 如果只有一个盘子，直接移动到目标柱
         if (num == 1){
             move (src,target);
             return;

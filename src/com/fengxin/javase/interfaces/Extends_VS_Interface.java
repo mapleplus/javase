@@ -13,7 +13,6 @@ public class Extends_VS_Interface {
 
 // fish接口
 interface fish {
-
     void swimming();
 }
 // monkey类

@@ -17,12 +17,10 @@ public class TCPClient02 {
         Socket socket = new Socket (InetAddress.getLocalHost (),8888);
         // 连接上后，获取输出流对象，该对象和当前的socket关联
         OutputStream outputStream = socket.getOutputStream ();
-        
         // 写入数据到数据通道，向服务器发送数据
         outputStream.write ("Hello, server!".getBytes ());
         // 结束标志
         socket.shutdownOutput ();
-        
         // ----------------------------------------------------------------------
         // 客户端接收服务器返回的数据
         InputStream inputStream = socket.getInputStream ();
@@ -32,7 +30,6 @@ public class TCPClient02 {
             System.out.println (new String (bytes,0,len));
         }
         // ----------------------------------------------------------------------
-
         // 关闭输出流和Socket
         outputStream.close ();
         socket.close ();

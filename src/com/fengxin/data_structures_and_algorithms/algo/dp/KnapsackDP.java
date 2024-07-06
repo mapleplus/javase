@@ -19,7 +19,7 @@ public class KnapsackDP {
         
         for (int i = 1 ; i <= n ; i++) {
             for (int j = 1 ; j <= cap ; j++) {
-                // 剪枝
+                // 剪枝 物品重量超过背包容量
                 if (wgt[i - 1] > j) {
                     dp[i][j] = dp[i - 1][j];
                 }else {
@@ -27,6 +27,7 @@ public class KnapsackDP {
                 }
             }
         }
+        // 打印dp
         for (int i = 0 ; i <= n ; i++) {
             for (int j = 0 ; j <= cap ; j++) {
                 System.out.print (dp[i][j] + " ");
