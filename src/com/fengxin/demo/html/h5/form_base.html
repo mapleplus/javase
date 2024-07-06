@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表单标签base</title>
+  </head>
+  <body>
+    <!-- placeholder="请输入账号" required autofocus autocomplete="on" -->
+    <!-- pattern="\w{6}" 通常与 required 联用 正则表达式-->
+    <form action="">
+      <span>账户</span>
+      <input
+        type="text"
+        placeholder="请输入账号"
+        required
+        autofocus
+        autocomplete="on"
+      />
+      <br />
+      <span>密码</span>
+      <input
+        type="password"
+        placeholder="请输入密码"
+        pattern="\w{6}"
+        required
+      />
+      <br />
+      <input type="radio" name="gender" value="male" />男
+      <input type="radio" name="gender" value="female" />女
+      <br />
+      <input type="checkbox" value="抽烟" name="hobby" />抽烟
+      <input type="checkbox" value="抽烟" name="hobby" />喝酒
+      <input type="checkbox" value="抽烟" name="hobby" />打牌
+      <br />
+      <textarea name="other"></textarea>
+      <br />
+      <button>登录</button>
+    </form>
+  </body>
+</html>

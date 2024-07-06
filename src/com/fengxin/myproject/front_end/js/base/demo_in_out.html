@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>简单输入输出练习</title>
+    <style>
+      table {
+        margin: 0 auto;
+        border-collapse: collapse;
+      }
+      table,th,td {
+         border: 1px solid #000;
+         padding: 5px 10px;
+         text-align: center;
+      }
+      table
+    </style>
+  </head>
+  <body>
+    <script>
+      let price = +prompt("请输入单价：");
+      let numbers = +prompt("请输入数量：");
+      let total = price * numbers;
+      let address_ = prompt("请输入收货地址：");
+      document.write(
+        `<table>
+      <caption>
+        商品信息
+      </caption>
+      <thead>
+        <th>商品名称</th>
+        <th>商品单价</th>
+        <th>数量</th>
+        <th>总价</th>
+        <th>地址</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>MacBook Pro</td>
+          <td>${price}元</td>
+          <td>${numbers}</td>
+          <td>${total}</td>
+          <td>${address_}</td>
+        </tr>
+      </tbody>
+    </table>`
+      );
+    </script>
+  </body>
+</html>
