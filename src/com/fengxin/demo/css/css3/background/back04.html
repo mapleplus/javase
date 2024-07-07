@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>多背景图</title>
+    <style>
+      .box {
+        width: 400px;
+        height: 400px;
+        /*复合属性 background: color url repeat position / size origin clip */
+        background: url(../../image/idea64.ico) left top / 100px,
+          url(../../image/idea64.ico) right top / 100px,
+          url(../../image/idea64.ico) left bottom / 100px,
+          url(../../image/idea64.ico) right bottom / 100px;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

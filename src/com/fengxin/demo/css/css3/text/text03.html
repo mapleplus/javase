@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文本溢出</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        /*  clip 当内联内容溢出时，将溢出部分裁切掉。 （默认值）
+            ellipsis 当内联内容溢出块容器时，将溢出部分替换为 ... 。
+            常用值如下：
+            注意：要使得 text-overflow 属性生效，块容器必须显式定义 overflow 为非 visible
+            值， white-space 为 nowrap 值。 */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <ul>
+        <li>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
+          repudiandae
+        </li>
+        <li>maiores fasjkdlfhl dasfffffsdafsadfsad</li>
+        <li>dsfja dfasjkdflhasdfj asdfasdfsadfasdfsadfsdafsdafds</li>
+        <li>fsdjafksdf sdafsdfasdfsdfdsfasdfsad</li>
+      </ul>
+    </div>
+  </body>
+</html>

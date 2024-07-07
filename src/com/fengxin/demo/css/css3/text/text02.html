@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文本换行</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        /*  normal 文本超出边界自动换行，文本中的换行被浏览器识别为一个空格。（默认值）
+            pre 原样输出，与 pre 标签的效果相同。
+            pre-wrap 在 pre 效果的基础上，超出元素边界自动换行。
+            pre-line 在 pre 效果的基础上，超出元素边界自动换行，且只识别文本中的换行，空格会忽略 未换行的空格保留。
+            nowrap 强制不换行 */
+        white-space: pre-line;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non repudiandae
+      maiores fasjkdlfhl 
+      dsfja dfasjkdflhasdfj 
+      fsdjafksdf
+    </div>
+  </body>
+</html>
