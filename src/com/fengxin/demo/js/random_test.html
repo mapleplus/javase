@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>排名</title>
+    <style>
+      .person {
+        text-align: center;
+        font-size: 50px;
+      }
+      #first {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="person" id="first">?</div>
+    <div class="person" id="second">?</div>
+    <div class="person" id="third">?</div>
+    <script>
+      const arr = ["周杰伦", "刘德华", "队长", "枫", "林俊杰"];
+      const firstIndex = Math.floor(Math.random() * arr.length);
+      const first = document.querySelector("#first");
+      first.innerHTML = arr[firstIndex];
+      arr.splice(firstIndex, 1); // Remove the selected name
+
+      const secondIndex = Math.floor(Math.random() * arr.length);
+      const second = document.querySelector("#second");
+      second.innerHTML = arr[secondIndex];
+      arr.splice(secondIndex, 1); // Remove the selected name
+
+      const thirdIndex = Math.floor(Math.random() * arr.length);
+      const third = document.querySelector("#third");
+      third.innerHTML = arr[thirdIndex];
+    </script>
+  </body>
+</html>
