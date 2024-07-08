@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>修改dom对象内容</title>
+    <style>
+      span {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="text">你们好</span>
+    <span class="html">你们好</span>
+    <script>
+      const text = document.querySelector(".text");
+      // 修改元素，不解析标签
+      console.log(text.innerText);
+      text.innerText = "枫";
+      // 修改元素，解析标签
+      const html = document.querySelector(".html");
+      html.innerHTML = "<em>枫</em>";
+    </script>
+  </body>
+</html>

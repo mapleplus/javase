@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>径向渐变</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 200px;
+        margin-left: 10px;
+        float: left;
+        color: aliceblue;
+        font-size: 20px;
+        line-height: 150px;
+        text-align: center;
+      }
+      .box1 {
+        background-image: radial-gradient(red, yellow, skyblue);
+      }
+      .box2 {
+        /* 关键词调整圆心位置 */
+        background-image: radial-gradient(at right, red, yellow, skyblue);
+      }
+      .box3 {
+        /* 像素值调整圆心位置 横 竖 */
+        background-image: radial-gradient(at 50px 150px, red, yellow, skyblue);
+      }
+      .box4 {
+        /* 调整正圆 */
+        background-image: radial-gradient(circle, red, yellow, skyblue);
+      }
+      .box5 {
+        /* 调整半径 */
+        background-image: radial-gradient(50px 100px, red, yellow, skyblue);
+      }
+      .box6 {
+        /* 调整渐变位置 */
+        background-image: radial-gradient(
+          red 50px,
+          yellow 100px,
+          skyblue 150px
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    <div class="box box6"></div>
+  </body>
+</html>
