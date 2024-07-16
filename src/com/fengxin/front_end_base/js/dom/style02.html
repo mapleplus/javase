@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>修改js属性方式2</title>
+    <style>
+      .box {
+        color: yellow;
+        font-size: 20px;
+      }
+      .add {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">123123</div>
+    <script>
+      const box = document.querySelector(".box");
+      // 追加样式
+      box.classList.add("add");
+      // 移除样式
+      box.classList.remove("box");
+      // 切换样式 有删除，没有添加
+      box.classList.toggle("add");
+      box.classList.toggle("box");
+    </script>
+  </body>
+</html>
