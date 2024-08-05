@@ -109,9 +109,9 @@
     <div class="item" style="display: none;">
       <i class="avatar"></i>
       <div class="info">
-        <p class="name">清风徐来</p>
+        <p class="name">枫</p>
         <p class="text">大家都辛苦啦，感谢各位大大的努力，能圆满完成真是太好了[笑哭][支持]</p>
-        <p class="time">2022-10-10 20:29:21</p>
+        <p class="time">2024-08-05 08:29:21</p>
       </div>
     </div>
   </div>
@@ -128,6 +128,21 @@
     // 输入文本事件 统计字数
     tx.addEventListener('input',function () {
       total.innerHTML = `${tx.value.length}/200字`
+    })
+    // 键盘事件 发布评论
+    const item = document.querySelector('.list .item')
+    const text = document.querySelector('.list .item .info .text')
+    tx.addEventListener('keyup',function (e) {
+      if(e.key === 'Enter'){
+        // 用户不能发空评论
+        if(tx.value.trim() !== ''){
+        text.innerHTML = tx.value
+        item.style.display = 'block'
+        }
+        // 发布后的相关细节
+        tx.value = ''
+        total.innerHTML = `${tx.value.length}/200字`
+      }
     })
   </script>
 </body>
