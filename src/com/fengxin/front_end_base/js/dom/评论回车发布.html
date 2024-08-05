@@ -129,10 +129,12 @@
     tx.addEventListener('input',function () {
       total.innerHTML = `${tx.value.length}/200字`
     })
-    // 键盘事件 发布评论
+    // 键盘事件 回车键发布评论
     const item = document.querySelector('.list .item')
     const text = document.querySelector('.list .item .info .text')
     tx.addEventListener('keyup',function (e) {
+      // 使用事件对象获取相关属性
+      // 按键回车时触发事件
       if(e.key === 'Enter'){
         // 用户不能发空评论
         if(tx.value.trim() !== ''){
