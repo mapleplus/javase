@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -68,7 +67,6 @@
     }
   </style>
 </head>
-
 <body>
   <div class="tab">
     <div class="tab-nav">
@@ -82,14 +80,29 @@
       </ul>
     </div>
     <div class="tab-content">
-      <div class="item active"><img src="../../../../../../../../BaiduNetdiskDownload/06-素材/images/tab00.png" alt="" /></div>
-      <div class="item"><img src="../../../../../../../../BaiduNetdiskDownload/06-素材/images/tab01.png" alt="" /></div>
-      <div class="item"><img src="../../../../../../../../BaiduNetdiskDownload/06-素材/images/tab02.png" alt="" /></div>
-      <div class="item"><img src="../../../../../../../../BaiduNetdiskDownload/06-素材/images/tab03.png" alt="" /></div>
-      <div class="item"><img src="../../../../../../../../BaiduNetdiskDownload/06-素材/images/tab04.png" alt="" /></div>
+      <div class="item active"><img src="../image/tab00.png" alt="" /></div>
+      <div class="item"><img src="../image/tab01.png" alt="" /></div>
+      <div class="item"><img src="../image/tab02.png" alt="" /></div>
+      <div class="item"><img src="../image/tab03.png" alt="" /></div>
+      <div class="item"><img src="../image/tab04.png" alt="" /></div>
     </div>
   </div>
-
+  <script>
+    // 设置tab样式
+    const as = document.querySelectorAll('.tab-nav a')
+    // 为每一个a注册事件
+    for (let i = 0; i < as.length; i++) {
+      as[i].addEventListener('mousemove',function () {
+        // 设置tab-nav样式
+        document.querySelector('.tab-nav .active').classList.remove('active')
+        // 使用this指定调用函数的对象
+        this.classList.add('active')
+        // 设置对应的图片
+        document.querySelector('.tab-content .active').classList.remove('active')
+        document.querySelector(`.tab-content .item:nth-child(${i + 1})`).classList.add('active')
+      })
+    }
+  </script>
 </body>
 
 </html>
