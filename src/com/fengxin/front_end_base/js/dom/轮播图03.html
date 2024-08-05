@@ -87,7 +87,6 @@
         }
     </style>
 </head>
-
 <body>
 <div class="slider">
     <div class="slider-wrapper">
@@ -127,6 +126,7 @@
     const p = document.querySelector('.slider-footer p')
     const back = document.querySelector('.slider-footer')
     let i = 0
+
     // 1.next按钮
     const next = document.querySelector('.toggle .next')
     next.addEventListener('click',function () {
@@ -135,12 +135,9 @@
         if(i === sliderData.length){
             i = 0
         }
-        img.src = sliderData[i].url
-        p.innerHTML = sliderData[i].title
-        document.querySelector('.slider-indicator .active').classList.remove('active')
-        document.querySelector(`.slider-indicator li:nth-child(${i + 1})`).classList.add('active')
-        back.style.backgroundColor = sliderData[i].color
+        toggle()
     })
+
     // 2. prev按钮
     const prev = document.querySelector('.toggle .prev')
     prev.addEventListener('click',function () {
@@ -149,11 +146,34 @@
         if(i === -1){
             i = sliderData.length - 1
         }
+        toggle()
+    })
+
+    // 相同代码封装 调用
+    function toggle(){
         img.src = sliderData[i].url
         p.innerHTML = sliderData[i].title
         document.querySelector('.slider-indicator .active').classList.remove('active')
         document.querySelector(`.slider-indicator li:nth-child(${i + 1})`).classList.add('active')
         back.style.backgroundColor = sliderData[i].color
+    }
+
+    // 3. 自动播放 其实就是调用next事件
+    let n = setInterval(function () {
+        next.click()
+    },1000)
+
+    // 4. 鼠标移动事件 到达大盒子就停止自动播放 而自己点击
+    const slider = document.querySelector('.slider')
+    slider.addEventListener('mouseenter',function () {
+        clearInterval(n)
+    })
+    // 5. 鼠标移动事件 离开大盒子就自动播放
+    slider.addEventListener('mouseleave',function () {
+        // 使用同一个id定时器
+        n = setInterval(function () {
+            next.click()
+        },1000)
     })
 </script>
 </body>
