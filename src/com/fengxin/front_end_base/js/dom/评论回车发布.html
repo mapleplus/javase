@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +18,7 @@
       height: 48px;
       border-radius: 50%;
       overflow: hidden;
-      background: url(../../../../../../../../BaiduNetdiskDownload/06-素材/images/avatar.jpg) no-repeat center / cover;
+      background: url(../image/avatar.jpg) no-repeat center / cover;
       margin-right: 20px;
     }
 
@@ -97,7 +96,6 @@
     }
   </style>
 </head>
-
 <body>
   <div class="wrapper">
     <i class="avatar"></i>
@@ -117,7 +115,21 @@
       </div>
     </div>
   </div>
-
+  <script>
+    // 焦点事件 淡入淡出
+    const tx = document.querySelector('#tx')
+    const total = document.querySelector('.wrapper .total')
+    tx.addEventListener('focus',function () {
+      total.style.opacity = '1'
+    })
+    tx.addEventListener('blur',function () {
+      total.style.opacity = '0'
+    })
+    // 输入文本事件 统计字数
+    tx.addEventListener('input',function () {
+      total.innerHTML = `${tx.value.length}/200字`
+    })
+  </script>
 </body>
 
 </html>
