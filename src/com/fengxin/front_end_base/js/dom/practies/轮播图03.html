@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图事件</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .slider {
+            width: 560px;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .slider-wrapper {
+            width: 100%;
+            height: 320px;
+        }
+
+        .slider-wrapper img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .slider-footer {
+            height: 80px;
+            background-color: rgb(100, 67, 68);
+            padding: 12px 12px 0 12px;
+            position: relative;
+        }
+
+        .slider-footer .toggle {
+            position: absolute;
+            right: 0;
+            top: 12px;
+            display: flex;
+        }
+
+        .slider-footer .toggle button {
+            margin-right: 12px;
+            width: 28px;
+            height: 28px;
+            appearance: none;
+            border: none;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .slider-footer .toggle button:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .slider-footer p {
+            margin: 0;
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .slider-indicator {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .slider-indicator li {
+            width: 8px;
+            height: 8px;
+            margin: 4px;
+            border-radius: 50%;
+            background: #fff;
+            opacity: 0.4;
+            cursor: pointer;
+        }
+
+        .slider-indicator li.active {
+            width: 12px;
+            height: 12px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="slider">
+    <div class="slider-wrapper">
+        <img src="../../image/slider01.jpg" alt="" />
+    </div>
+    <div class="slider-footer">
+        <p>对人类来说会不会太超前了？</p>
+        <ul class="slider-indicator">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="toggle">
+            <button class="prev">&lt;</button>
+            <button class="next">&gt;</button>
+        </div>
+    </div>
+</div>
+<script>
+    // 1. 初始数据
+    const sliderData = [
+        { url: '../../image/slider01.jpg', title: '对人类来说会不会太超前了？', color: 'rgb(100, 67, 68)' },
+        { url: '../../image/slider02.jpg', title: '开启剑与雪的黑暗传说！', color: 'rgb(43, 35, 26)' },
+        { url: '../../image/slider03.jpg', title: '真正的jo厨出现了！', color: 'rgb(36, 31, 33)' },
+        { url: '../../image/slider04.jpg', title: '李玉刚：让世界通过B站看到东方大国文化', color: 'rgb(139, 98, 66)' },
+        { url: '../../image/slider05.jpg', title: '快来分享你的寒假日常吧~', color: 'rgb(67, 90, 92)' },
+        { url: '../../image/slider06.jpg', title: '哔哩哔哩小年YEAH', color: 'rgb(166, 131, 143)' },
+        { url: '../../image/slider07.jpg', title: '一站式解决你的电脑配置问题！！！', color: 'rgb(53, 29, 25)' },
+        { url: '../../image/slider08.jpg', title: '谁不想和小猫咪贴贴呢！', color: 'rgb(99, 72, 114)' },
+    ]
+    const img = document.querySelector('.slider-wrapper img')
+    const p = document.querySelector('.slider-footer p')
+    const back = document.querySelector('.slider-footer')
+    let i = 0
+
+    // 1.next按钮
+    const next = document.querySelector('.toggle .next')
+    next.addEventListener('click',function () {
+        i++
+        // 如果超过了最后一个 则跳回到第一个
+        if(i === sliderData.length){
+            i = 0
+        }
+        toggle()
+    })
+
+    // 2. prev按钮
+    const prev = document.querySelector('.toggle .prev')
+    prev.addEventListener('click',function () {
+        i--
+        // 如果小于了第一个（索引为0） 则跳回到最后一个
+        if(i === -1){
+            i = sliderData.length - 1
+        }
+        toggle()
+    })
+
+    // 相同代码封装 调用
+    function toggle(){
+        img.src = sliderData[i].url
+        p.innerHTML = sliderData[i].title
+        document.querySelector('.slider-indicator .active').classList.remove('active')
+        document.querySelector(`.slider-indicator li:nth-child(${i + 1})`).classList.add('active')
+        back.style.backgroundColor = sliderData[i].color
+    }
+
+    // 3. 自动播放 其实就是调用next事件
+    let n = setInterval(function () {
+        next.click()
+    },1000)
+
+    // 4. 鼠标移动事件 到达大盒子就停止自动播放 而自己点击
+    const slider = document.querySelector('.slider')
+    slider.addEventListener('mouseenter',function () {
+        clearInterval(n)
+    })
+    // 5. 鼠标移动事件 离开大盒子就自动播放
+    slider.addEventListener('mouseleave',function () {
+        // 使用同一个id定时器
+        n = setInterval(function () {
+            next.click()
+        },1000)
+    })
+</script>
+</body>
+</html>
