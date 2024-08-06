@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
-<head lang="en">
+<head>
   <meta charset="UTF-8">
   <title></title>
   <style>
@@ -75,7 +75,22 @@
     </tr>
   </table>
   <script>
-
+    const ckAll = document.querySelector('#checkAll')
+    const cks = document.querySelectorAll('.ck')
+    // ckAll复选框事件
+    ckAll.addEventListener('click', function () {
+      for (let i = 0; i < cks.length; i++) {
+        // 状态一致
+        cks[i].checked = this.checked
+      }
+    })
+    // 小框控制大框
+    for (let i = 0; i < cks.length; i++) {
+      // 每个小框注册事件
+      cks[i].addEventListener('click',function () {
+        ckAll.checked = document.querySelectorAll('.ck:checked').length === cks.length
+      })
+    }
   </script>
 </body>
 
