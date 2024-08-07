@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    .countdown {
+      width: 240px;
+      height: 305px;
+      text-align: center;
+      line-height: 1;
+      color: #fff;
+      background-color: brown;
+      /* background-size: 240px; */
+      /* float: left; */
+      overflow: hidden;
+    }
+
+    .countdown .next {
+      font-size: 16px;
+      margin: 25px 0 14px;
+    }
+
+    .countdown .title {
+      font-size: 33px;
+    }
+
+    .countdown .tips {
+      margin-top: 80px;
+      font-size: 23px;
+    }
+
+    .countdown small {
+      font-size: 17px;
+    }
+
+    .countdown .clock {
+      width: 142px;
+      margin: 18px auto 0;
+      overflow: hidden;
+    }
+
+    .countdown .clock span,
+    .countdown .clock i {
+      display: block;
+      text-align: center;
+      line-height: 34px;
+      font-size: 23px;
+      float: left;
+    }
+
+    .countdown .clock span {
+      width: 34px;
+      height: 34px;
+      border-radius: 2px;
+      background-color: #303430;
+    }
+
+    .countdown .clock i {
+      width: 20px;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="countdown">
+    <p class="next"></p>
+    <p class="title">倒计时</p>
+    <p class="clock">
+      <span id="hour">00</span>
+      <i>:</i>
+      <span id="minutes">25</span>
+      <i>:</i>
+      <span id="second">20</span>
+    </p>
+  </div>
+  <script>
+    /* 转换天时分秒
+    d = parseInt(总秒数 / 60 / 60 / 24)
+    h = parseInt(总秒数 / 60 / 60 % 24)
+    m = parseInt(总秒数 / 60 % 60)
+    s = parseInt(总秒数 % 60)
+    */
+    // 1.设置日期
+    const p = document.querySelector('.next')
+    p.innerHTML = `${new Date().getFullYear()}年${new Date().getMonth()}月${new Date().getDate()}日`
+    setInterval(function () {
+      p.innerHTML = `${new Date().getFullYear()}年${new Date().getMonth()}月${new Date().getDate()}日`
+    },1000)
+    // 设置一天倒计时
+    const future = +new Date('2024-8-8 12:00:00')
+    const myTime = +new Date()
+    // 要转换为秒数
+    const ss = (future - myTime) / 1000
+    let h = parseInt(ss / 60 / 60 % 24)
+    let m = parseInt(ss / 60 % 60)
+    const s = parseInt(ss % 60)
+    const H = document.querySelector('#hour')
+    const M = document.querySelector('#minutes')
+    const S = document.querySelector('#second')
+    H.innerHTML = h < 10 ? '0' + h : h
+    M.innerHTML = m < 10 ? '0' + m : m
+    S.innerHTML = s < 10 ? '0' + s : s
+    setInterval(function () {
+      const future = +new Date('2024-8-8 12:00:00')
+      const myTime = +new Date()
+      // 要转换为秒数
+      const ss = (future - myTime) / 1000
+      let h = parseInt(ss / 60 / 60 % 24)
+      let m = parseInt(ss / 60 % 60)
+      const s = parseInt(ss % 60)
+      const H = document.querySelector('#hour')
+      const M = document.querySelector('#minutes')
+      const S = document.querySelector('#second')
+      H.innerHTML = h < 10 ? '0' + h : h
+      M.innerHTML = m < 10 ? '0' + m : m
+      S.innerHTML = s < 10 ? '0' + s : s
+    },1000)
+
+
+
+
+  </script>
+</body>
+
+</html>
