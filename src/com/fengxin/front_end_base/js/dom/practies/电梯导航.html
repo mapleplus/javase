@@ -1243,7 +1243,7 @@
           // 防止影响backTop: e.target.dataset.name
           if(e.target.tagName === 'A' && e.target.dataset.name){
           // 样式是添加到a标签的内容
-          // 因为刚开始是没有样式的 等鼠标点击才会有样式 涉及到样式清楚时的细节判断
+          // 因为刚开始是没有样式的 等鼠标点击才会有样式 涉及到样式清除时的细节判断
           // 先判断是否具有样式 有 先清后加 无 直接加
           if(document.querySelector('.xtx-elevator-list .active')){
             document.querySelector('.xtx-elevator-list .active').classList.remove('active')
@@ -1251,8 +1251,7 @@
           e.target.classList.add('active')
         // 跳转到指定位置 板块xtx_goods_topic 和 导航data-name="topic"对应
             const end = e.target.dataset.name
-            const oTop = document.querySelector(`.xtx_goods_${end}`).offsetTop
-            document.documentElement.scrollTop = oTop
+            document.documentElement.scrollTop = document.querySelector(`.xtx_goods_${end}`).offsetTop
         }
       })
       // 根据模块定位导航
@@ -1275,7 +1274,6 @@
 
         }else if(html >= document.querySelector('.xtx_goods_topic').offsetTop){
           document.querySelector('[data-name="topic"]').classList.add('active')
-
         }
       })
     })();
