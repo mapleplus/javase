@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>刷新页面-获取?#和浏览器信息</title>
+</head>
+<body>
+  <button class="reload">刷新</button>
+  <a href="#aa">aa</a>
+  <script>
+    const element = document.querySelector('.reload');
+    console.log(navigator.userAgent)
+    // ?
+    console.log(location.search)
+    // #
+    console.log(location.hash)
+    element.addEventListener('click',function () {
+      location.reload()
+    })
+  </script>
+</body>
+</html>
