@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>本地存储</title>
+</head>
+<body>
+  <script>
+    // 存储到浏览器
+    // 只能存储为字符串
+    // 手动删除才会消失
+    const obj = {
+      'uname' : '枫',
+      'age' : 18,
+      'hobby' : 'basketball'
+    }
+    // JSON转换对象为字符串
+    localStorage.setItem('obj',JSON.stringify(obj))
+    // JSON转换字符串为对象
+    console.log(JSON.parse(localStorage.getItem('obj')))
+  </script>
+</body>
+</html>
