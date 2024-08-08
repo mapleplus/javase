@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>跳转页面</title>
+</head>
+<body>
+  <div>
+    <span>5秒后跳转到京东</span>
+  </div>
+  <script>
+    const spanElement = document.querySelector('span');
+    let time = 5
+    let n = setInterval(function () {
+      time--
+      spanElement.innerHTML = `${time}秒后跳转到京东`
+      if (time === 0){
+        // 停止定时器
+        clearInterval(n)
+        location.href = 'https://www.jd.com/'
+      }
+    },1000)
+
+  </script>
+</body>
+</html>
