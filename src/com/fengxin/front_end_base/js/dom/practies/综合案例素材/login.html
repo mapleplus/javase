@@ -77,6 +77,37 @@
     </div>
   </div>
   <script>
+    // 登录方式切换
+    const tab_nav = document.querySelector('.tab-nav')
+    const arr = document.querySelectorAll('.tab-pane')
+    tab_nav.addEventListener('click',function (evt) {
+      if (evt.target.tagName === 'A'){
+        document.querySelector('.active').classList.remove('active')
+        evt.target.classList.add('active')
+        // 显示对应的内容
+        // 先将原有内容清除 无法知道是谁的内容 使用遍历解决所有
+        for (let i = 0; i < arr.length; i++) {
+          arr[i].style.display = 'none'
+        }
+        arr[evt.target.dataset.id].style.display = 'block'
+      }
+    })
+    // 点击提交
+    const form = document.querySelector('form')
+    const username = document.querySelector('[name=username]')
+    const password = document.querySelector('[name=password]')
+    const my_checkbox = document.querySelector('#my-checkbox')
+    form.addEventListener('submit',function (e) {
+      e.preventDefault()
+      if (!my_checkbox.checked){
+        alert('请勾选同意按钮')
+      }else {
+        // 提交表单 存储数据到本地
+        localStorage.setItem('data-name',username.value)
+        // 跳转到首页
+        location.href = 'index.html'
+      }
+    })
 
   </script>
 </body>

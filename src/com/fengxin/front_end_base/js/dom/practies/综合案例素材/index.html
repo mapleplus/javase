@@ -1219,8 +1219,29 @@
   </div>
 
   <script>
-
-
+    // 设置登录名
+    const loginName = document.querySelector('.xtx_navs li')
+    // 设置退出登录
+    const exit = loginName.nextElementSibling
+    render()
+    // 渲染函数
+    function render() {
+      const name = localStorage.getItem('data-name')
+      if (name){
+        loginName.innerHTML = ` <a href="javascript:;"><i class="iconfont icon-user">${name}</i></a>`
+        exit.innerHTML = '<a href="javascript:;">退出登录</a>'
+      }else{
+        //没有数据时
+        loginName.innerHTML = '<a href="./login.html">请先登录</a>'
+        exit.innerHTML = '<a href="./register.html">免费注册</a>'
+      }
+    }
+    // 退出登录时
+    exit.addEventListener('click',function () {
+        // 删除本地数据
+        localStorage.removeItem('data-name')
+        render()
+    })
   </script>
 </body>
 
