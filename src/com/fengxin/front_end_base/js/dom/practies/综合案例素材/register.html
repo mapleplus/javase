@@ -287,7 +287,6 @@
     // 验证表单二次密码
     const confirm = document.querySelector('[name=confirm]')
     const fMsg = confirm.nextElementSibling
-    // 正则表达式手机号码
     function verifyConfirm() {
       if (confirm.value !== password.value){
         fMsg.innerHTML = '两次密码不一致'
