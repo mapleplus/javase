@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 闭包 === 内层函数 + 外层函数的变量
+    // 简单的写法
+    function outer() {
+      let a = 10
+      function fn() {
+        console.log(a)
+      }
+      fn()
+    }
+    outer()
+
+/*    常见的闭包的形式   外部可以访问使用 函数内部的变量
+    function outer() {
+      let a = 100
+      function fn() {
+        console.log(a)
+      }
+      return fn
+    }
+    const fun = outer()
+    fun()
+    解释：outer()   ===  fn   ===  function fn() {}*/
+
+
+    // 闭包的应用
+    // 普通形式 统计函数调用的次数
+    function count() {
+      let i = 0
+      function fn() {
+        i++
+        console.log(`函数被调用了${i}次`)
+      }
+      return fn
+    }
+    const fun = count()
+    fun()
+  </script>
+</body>
+
+</html>
