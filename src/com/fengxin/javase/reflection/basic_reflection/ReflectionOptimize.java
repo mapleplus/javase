@@ -1,8 +1,6 @@
 package com.fengxin.javase.reflection.basic_reflection;
 
 import java.io.FileInputStream;
-import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Properties;
 
@@ -11,7 +9,7 @@ import java.util.Properties;
  **/
 @SuppressWarnings ("all")
 public class ReflectionOptimize {
-    public static void main (String[] args) throws IOException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException, InstantiationException {
+    public static void main (String[] args) throws Exception {
         Properties properties = new Properties ();
         properties.load (new FileInputStream ("src/com/fengxin/javase/reflection/basic_reflection/reflection.properties"));
         String className = properties.getProperty ("className");

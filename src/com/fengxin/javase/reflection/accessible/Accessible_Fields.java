@@ -1,14 +1,13 @@
 package com.fengxin.javase.reflection.accessible;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 
 /**
  * @author FENGXIN
  **/
 public class Accessible_Fields {
-    public static void main (String[] args) throws ClassNotFoundException, NoSuchFieldException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
-        String personPath = "com.fengxin.basic.reflection.accessible.Person";
+    public static void main (String[] args) throws Exception {
+        String personPath = "com.fengxin.javase.reflection.accessible.Person";
         Class<?> person = Class.forName (personPath);
         Object obj = person.getDeclaredConstructor ().newInstance ();
         Field name = person.getDeclaredField ("name");

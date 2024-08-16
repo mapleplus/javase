@@ -5,21 +5,23 @@ package com.fengxin.javase.reflection.basic_reflection;
  **/
 
 class Animal{
-    private String name;
+    String name;
     public Animal () {}
     public void hi(){
         System.out.println("动物叫");
     }
 }
+
 interface Fly{
     void fly();
 }
+
 interface Run{
     void run();
 }
+
 @SuppressWarnings ({"all"})
 public class Cat extends Animal implements Fly, Run{
-    private String name;
     protected String color;
     public int age = 5;
     public Cat () {}

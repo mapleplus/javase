@@ -1,10 +1,8 @@
 package com.fengxin.javase.reflection.basic_reflection;
 
 import java.io.FileInputStream;
-import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Properties;
 
@@ -13,7 +11,7 @@ import java.util.Properties;
  **/
 @SuppressWarnings ("all")
 public class ReflectionForCat {
-    public static void main (String[] args) throws IOException, ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException, NoSuchFieldException {
+    public static void main (String[] args) throws Exception {
         // 创建一个Properties对象
         Properties properties = new Properties ();
         

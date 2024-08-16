@@ -1,14 +1,13 @@
 package com.fengxin.javase.reflection.accessible;
 
 import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 
 /**
  * @author FENGXIN
  **/
 public class Accessible_Constructor {
-    public static void main (String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
-        String personPath = "com.fengxin.basic.reflection.accessible.Person";
+    public static void main (String[] args) throws Exception {
+        String personPath = "com.fengxin.javase.reflection.accessible.Person";
         Class<?> person = Class.forName (personPath);
         
         // 默认构造函数

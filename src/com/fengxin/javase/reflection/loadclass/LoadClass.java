@@ -1,6 +1,5 @@
 package com.fengxin.javase.reflection.loadclass;
 
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Scanner;
 
@@ -9,7 +8,7 @@ import java.util.Scanner;
  * 类加载的分类
  **/
 public class LoadClass {
-    public static void main (String[] args) throws ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
+    public static void main (String[] args) throws Exception {
         int flag;
         Scanner sc = new Scanner(System.in);
         System.out.println ("请输入1或2");

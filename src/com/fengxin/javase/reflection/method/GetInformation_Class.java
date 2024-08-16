@@ -24,6 +24,7 @@ public class GetInformation_Class {
             System.out.println (field.getType ());
             // getName:返回属性名
             System.out.println (field.getName ());
+            System.out.println ("------------");
         }
         System.out.println ("---------------------------");
         System.out.println ("Methods:");
@@ -37,6 +38,7 @@ public class GetInformation_Class {
             System.out.println (method.getName ());
             // getParameterTypes:以Class[]返回参数类型数组
             System.out.println (Arrays.toString (method.getParameterTypes ()));
+            System.out.println ("------------");
         }
         System.out.println ("---------------------------");
         System.out.println ("Constructors:");
@@ -48,6 +50,7 @@ public class GetInformation_Class {
             System.out.println (constructor.getName ());
             // getParameterTypes:以Class[]返回参数类型数组
             System.out.println (Arrays.toString (constructor.getParameterTypes ()));
+            System.out.println ("------------");
         }
     }
 }
