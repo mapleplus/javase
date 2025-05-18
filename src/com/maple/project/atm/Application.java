@@ -1,7 +1,7 @@
 package com.maple.project.atm;
 
 /**
- * @author FENGXIN
+ * @author maple
  */
 public class Application {
     public static void main(String[] args) {

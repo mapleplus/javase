@@ -5,7 +5,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 /**
- * @author FENGXIN
+ * @author maple
  * TCP 文件上传 服务器
  **/
 public class UploadServer {

@@ -4,10 +4,10 @@ package com.maple.javase.file.bufferedstream.input_output;
 import java.io.*;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 字节流
  **/
-public class BufferedIn_OutStream {
+public class BufferedInOutStream {
     public static void main (String[] args) {
         copyFile ();
     }

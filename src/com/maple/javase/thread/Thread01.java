@@ -1,7 +1,7 @@
 package com.maple.javase.thread;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 创建一个Java线程，每隔一秒打印一次“小猫线程执行...”
  **/
 public class Thread01 {

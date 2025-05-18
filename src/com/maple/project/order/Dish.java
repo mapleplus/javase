@@ -4,10 +4,8 @@ import java.io.*;
 import java.util.Scanner;
 
 /**
- * @author FENGXIN
- *
+ * @author maple
  * 菜品类
- *
  */
 public class Dish {
     protected static int id;

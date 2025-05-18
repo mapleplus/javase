@@ -1,8 +1,7 @@
 package com.maple.algorithms.string;
 
 /**
- * @author FENGXIN
- * 力扣28
+ * @author maple
  **/
 public class Kmp {
     public static void main (String[] args) {

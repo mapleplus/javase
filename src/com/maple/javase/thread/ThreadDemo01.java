@@ -1,7 +1,7 @@
 package com.maple.javase.thread;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 创建两个线程，一个线程输出hello，另一个线程输出world，交替输出10次。
  **/
 public class ThreadDemo01 {

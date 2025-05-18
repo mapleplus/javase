@@ -1,6 +1,6 @@
 package com.maple.javase.wrapper;
 /**
- * @author FENGXIN
+ * @author maple
  * 编写一个Java程序，演示如何将Integer类型转换为String类型，以及如何将String类型转换为Integer类型。
  **/
 

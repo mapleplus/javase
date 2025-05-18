@@ -12,7 +12,7 @@ import java.net.Socket;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 连接客户端，验证用户
  **/
 public class ChatServer {

@@ -2,8 +2,9 @@ package com.maple.javase.wrapper;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class DataDemo {
     public static void main (String[] args) throws ParseException {

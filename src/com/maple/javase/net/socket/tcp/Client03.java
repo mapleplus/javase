@@ -5,12 +5,12 @@ import java.net.InetAddress;
 import java.net.Socket;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 客户端
  * 更新内容：使用字符流传输数据
  * 包装流
  **/
-public class TCPClient03 {
+public class Client03 {
     public static void main (String[] args) throws IOException {
         // 连接本机端口，返回一个Socket对象 指定服务器的IP地址和端口号
         Socket socket = new Socket (InetAddress.getLocalHost (),8888);

@@ -3,7 +3,7 @@ package com.maple.javase.collection.map;
 import java.util.*;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 集合都有两种遍历方式 for each 和 iterator
  **/
 @SuppressWarnings ("all")

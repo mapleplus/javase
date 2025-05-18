@@ -5,8 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * @author FENGXIN
- * @date 2024/6/25
+ * @author maple
  **/
 public class Nqueen {
     static List<List<String>> res = new ArrayList<> ();

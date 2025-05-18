@@ -1,7 +1,7 @@
 package com.maple.javase.localinnerclass;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class StaticInnerClass {
     public static void main(String[] args) {

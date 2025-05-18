@@ -1,8 +1,7 @@
 package com.maple.algorithms.sort;
 
 /**
- * @author FENGXIN
- * @date 2024/6/24
+ * @author maple
  **/
 public class SelectSort {
     public static void main (String[] args) {

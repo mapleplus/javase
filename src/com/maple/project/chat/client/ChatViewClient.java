@@ -7,7 +7,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 主界面
  **/
 public class ChatViewClient {

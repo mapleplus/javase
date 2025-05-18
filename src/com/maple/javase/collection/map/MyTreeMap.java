@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.TreeMap;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class MyTreeMap {
     public static void main (String[] args) {

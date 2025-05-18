@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class PrintWriter01 {
     public static void main (String[] args) throws FileNotFoundException {

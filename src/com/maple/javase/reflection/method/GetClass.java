@@ -4,7 +4,7 @@ import com.maple.javase.reflection.base.Cat;
 import com.maple.javase.reflection.common.Config;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 获取Class的方法
  **/
 public class GetClass {

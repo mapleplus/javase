@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author FENGXIN
- * @date 2024/6/25
+ * @author maple
  **/
 public class Permute {
     static List<List<Integer>> res = new ArrayList<> ();

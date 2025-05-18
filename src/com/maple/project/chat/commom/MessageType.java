@@ -1,7 +1,7 @@
 package com.maple.project.chat.commom;
 
 /**
- * @author FENGXIN
+ * @author maple
  */
 public interface MessageType {
 

@@ -6,10 +6,10 @@ import java.net.InetAddress;
 import java.net.Socket;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 客户端
  **/
-public class TCPClient01 {
+public class Client01 {
     public static void main (String[] args) throws IOException {
         // 连接本机端口，返回一个Socket对象 指定服务器的IP地址和端口号
         Socket socket = new Socket (InetAddress.getLocalHost (),9999);

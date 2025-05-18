@@ -3,7 +3,7 @@ package com.maple.javase.file.bufferedstream.reader_writer;
 import java.io.*;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class BufferCopy {
     public static void main (String[] args) {

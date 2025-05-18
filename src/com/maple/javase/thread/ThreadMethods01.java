@@ -1,7 +1,7 @@
 package com.maple.javase.thread;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 让线程休眠，并使用interrupt()方法中断线程。
  **/
 public class ThreadMethods01 {

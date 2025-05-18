@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class PrintStream01 {
     public static void main (String[] args) throws IOException {

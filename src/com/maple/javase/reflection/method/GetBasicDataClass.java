@@ -3,7 +3,7 @@ package com.maple.javase.reflection.method;
 import java.io.Serializable;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 获取基本类型的Class
  **/
 public class GetBasicDataClass {

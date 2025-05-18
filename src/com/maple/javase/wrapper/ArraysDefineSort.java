@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 使用冒泡排序实现定制排序
  **/
 public class ArraysDefineSort {

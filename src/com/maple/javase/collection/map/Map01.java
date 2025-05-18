@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class Map01 {
     public static void main (String[] args) {

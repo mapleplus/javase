@@ -5,7 +5,7 @@ import com.maple.javase.reflection.common.Config;
 import java.lang.reflect.Method;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class ReflectionOptimize {
     public static void main (String[] args) throws Exception {

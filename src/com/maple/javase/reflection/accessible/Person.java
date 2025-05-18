@@ -1,7 +1,7 @@
 package com.maple.javase.reflection.accessible;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class Person {
     private String name;

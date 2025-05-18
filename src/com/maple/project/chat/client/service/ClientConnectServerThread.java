@@ -8,7 +8,7 @@ import java.net.Socket;
 import java.util.Scanner;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 客户端验证成功后，打开一个线程，无限循环，用于随时接收服务器端发送的消息,并对消息进行处理
  **/
 public class ClientConnectServerThread extends Thread implements MessageType{

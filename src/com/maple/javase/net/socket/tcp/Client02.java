@@ -7,11 +7,11 @@ import java.net.InetAddress;
 import java.net.Socket;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 客户端
  * 更新内容：增加服务器返回数据的接收，增加结束标志
  **/
-public class TCPClient02 {
+public class Client02 {
     public static void main (String[] args) throws IOException {
         // 连接本机端口，返回一个Socket对象 指定服务器的IP地址和端口号
         Socket socket = new Socket (InetAddress.getLocalHost (),8888);

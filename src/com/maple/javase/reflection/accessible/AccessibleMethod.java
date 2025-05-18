@@ -3,7 +3,7 @@ package com.maple.javase.reflection.accessible;
 import java.lang.reflect.Method;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class AccessibleMethod {
     public static void main (String[] args) throws Exception {

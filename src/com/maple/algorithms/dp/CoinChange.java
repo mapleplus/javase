@@ -3,8 +3,7 @@ package com.maple.algorithms.dp;
 import java.util.Arrays;
 
 /**
- * @author FENGXIN
- * @date 2024/6/25
+ * @author maple
  **/
 public class CoinChange {
     public static void main (String[] args) {

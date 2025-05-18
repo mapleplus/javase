@@ -3,7 +3,7 @@ package com.maple.javase.wrapper;
 import java.util.Arrays;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class SystemMethod {
     public static void main (String[] args) {

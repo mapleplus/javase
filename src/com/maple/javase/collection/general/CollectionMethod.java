@@ -3,10 +3,11 @@ package com.maple.javase.collection.general;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-@SuppressWarnings ("all")
+
 /**
- * @author FENGXIN
+ * @author maple
  **/
+@SuppressWarnings ("all")
 public class CollectionMethod {
     public static void main (String[] args) {
         Collection collection = new ArrayList ();

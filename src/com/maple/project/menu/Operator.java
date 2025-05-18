@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * @author FENGXIN
+ * @author maple
  */
 public class Operator {
 

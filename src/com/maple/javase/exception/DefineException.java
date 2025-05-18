@@ -1,7 +1,7 @@
 package com.maple.javase.exception;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class DefineException {
 

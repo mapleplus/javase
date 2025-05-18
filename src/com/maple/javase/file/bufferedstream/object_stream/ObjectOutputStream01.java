@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 序列化
  **/
 public class ObjectOutputStream01 {

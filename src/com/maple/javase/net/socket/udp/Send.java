@@ -7,7 +7,7 @@ import java.net.*;
  * @author FENGXIN
  * 发送端
  **/
-public class UdpSend {
+public class Send {
     public static void main (String[] args) throws IOException {
         // 创建UDP Socket
         DatagramSocket socket = new DatagramSocket (8888);

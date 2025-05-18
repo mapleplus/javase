@@ -1,8 +1,7 @@
 package com.maple.algorithms.dp;
 
 /**
- * @author FENGXIN
- * @date 2024/6/26
+ * @author maple
  **/
 public class KnapsackDP {
     public static void main (String[] args) {

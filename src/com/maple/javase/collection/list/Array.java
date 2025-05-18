@@ -1,8 +1,7 @@
 package com.maple.javase.collection.list;
 
 /**
- * @author FENGXIN
- * 数组的相关操作
+ * @author maple
  **/
 public class Array {
     public static void main(String[] args) {

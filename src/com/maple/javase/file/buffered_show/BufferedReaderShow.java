@@ -1,7 +1,7 @@
 package com.maple.javase.file.buffered_show;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 处理流
  * BufferedReader_Show类封装了StringReader_Show和FileReader_Show类，被封装的类称为节点流，BufferedReader_Show类称为处理流。
  * BufferedReader_Show类重写了节点流中的所有方法，并且添加了增强功能的方法。
@@ -12,11 +12,11 @@ package com.maple.javase.file.buffered_show;
  * 由于多态的动态绑定机制，BufferedReader_Show中StringReader_Show或FileReader_Show对象调用方法时就调用他们自己的readString和readFile两个方法
  * 增强功能方法也是如此调用机制
  **/
-public class BufferedReader_Show extends Reader_Show{
+public class BufferedReaderShow extends ReaderShow {
     // 封装数据源
-    private final Reader_Show readerShow;
+    private final ReaderShow readerShow;
     // 构造函数
-    public BufferedReader_Show(Reader_Show readerShow) {
+    public BufferedReaderShow(ReaderShow readerShow) {
         this.readerShow = readerShow;
     }
     // 普通方法

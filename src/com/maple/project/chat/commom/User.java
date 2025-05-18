@@ -4,7 +4,7 @@ import java.io.Serial;
 import java.io.Serializable;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 用户类 序列化
  **/
 public class User implements Serializable {

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 存放客户端线程
  **/
 public class ClientThreadMap {

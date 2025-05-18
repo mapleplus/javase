@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class Generic02 {
     public static void main (String[] args) {

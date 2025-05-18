@@ -5,10 +5,10 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 接收端
  **/
-public class UdpReceive {
+public class Receive {
     public static void main (String[] args) throws IOException {
         // 创建一个UDP Socket，并指定端口号
         DatagramSocket socket = new DatagramSocket (9999);

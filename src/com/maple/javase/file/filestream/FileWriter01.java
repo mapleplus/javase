@@ -4,9 +4,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 字符输出流
- *
  **/
 public class FileWriter01 {
     public static void main (String[] args) {

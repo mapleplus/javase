@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.Scanner;
 
 /**
- * @author FENGXIN
+ * @author maple
  */
 public class Customer extends Person{
     protected static int customerNumber = 0;

@@ -3,7 +3,7 @@ package com.maple.javase.file.bufferedstream.in_out_rw;
 import java.io.*;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 转换流
  **/
 public class OutputStreamWriter01 {

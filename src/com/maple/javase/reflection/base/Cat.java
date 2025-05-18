@@ -1,7 +1,7 @@
 package com.maple.javase.reflection.base;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 
 class Animal{

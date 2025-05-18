@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 获取类中的信息
  * 包括字段，方法，构造器的相关信息
  **/

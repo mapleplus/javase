@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class BufferedWriter01 {
     public static void main (String[] args) throws IOException {

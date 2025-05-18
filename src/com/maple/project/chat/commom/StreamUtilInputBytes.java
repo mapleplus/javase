@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class StreamUtilInputBytes {
     public static byte[] toByteArray (InputStream inputStream) throws IOException {

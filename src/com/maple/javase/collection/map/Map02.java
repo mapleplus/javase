@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class Map02 {
     public static void main (String[] args) {

@@ -3,7 +3,7 @@ package com.maple.project.order;
 import java.util.Scanner;
 
 /**
- * @author FENGXIN
+ * @author maple
  */
 public class Application extends Thread{
     public static void main(String[] args) {

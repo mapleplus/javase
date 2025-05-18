@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class BufferedReader01 {
     public static void main (String[] args) throws IOException {

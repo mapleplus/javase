@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class Properties02 {
     public static void main (String[] args) throws IOException {

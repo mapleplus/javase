@@ -5,12 +5,12 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 服务器端
  * 更新内容：使用字符流传输数据
  * 包装流
  **/
-public class TCPServer03 {
+public class Server03 {
     public static void main (String[] args) throws IOException {
         // 创建ServerSocket对象，指定端口号
         ServerSocket serverSocket = new ServerSocket (8888);

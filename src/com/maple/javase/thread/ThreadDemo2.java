@@ -1,7 +1,7 @@
 package com.maple.javase.thread;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 主线程每隔一秒输出hi，当hi输出5次时
  * 创建一个新线程threadDemo02_Test01
  * 实现插队先让该线程每隔一秒输出hello

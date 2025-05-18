@@ -1,7 +1,7 @@
 package com.maple.javase.collection.list;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 单链表的实现
  * 下标索引head.next 从0开始
  * 说明：指定位置的操作时，以第一个结点head.next为起始结点，for循环中索引 (i = 0;i < index;i++)

@@ -3,7 +3,7 @@ package com.maple.javase.file.general;
 import java.io.File;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class FileOperator {
     public static void main (String[] args) {

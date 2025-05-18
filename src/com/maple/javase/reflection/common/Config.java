@@ -2,9 +2,7 @@ package com.maple.javase.reflection.common;
 
 
 /**
- * @Description 类路径配置
- * @Author maple
- * @Date 2025-05-18 23:16
+ * @author maple
  **/
 public enum Config {
     /**

@@ -5,7 +5,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import com.maple.javase.file.define_util.StreamUtilToByteArray;
 /**
- * @author FENGXIN
+ * @author maple
  * 下载文件 服务器
  **/
 public class DownloadServer {

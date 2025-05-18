@@ -1,9 +1,9 @@
 package com.maple.javase.file.buffered_show;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
-public class FileReader_Show extends Reader_Show{
+public class FileReaderShow extends ReaderShow {
     // 继承自Reader_Show类，实现FileReader的read方法
     @Override
     public void readFile()  {

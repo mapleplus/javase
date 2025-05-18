@@ -10,7 +10,7 @@ import java.util.Scanner;
 import java.util.Set;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 服务器推送消息给所有在线用户
  **/
 public class PushMessage implements Runnable,MessageType{

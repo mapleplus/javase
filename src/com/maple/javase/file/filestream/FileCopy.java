@@ -5,7 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 文件的拷贝
  **/
 public class FileCopy {

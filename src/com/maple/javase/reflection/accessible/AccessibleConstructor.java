@@ -3,7 +3,7 @@ package com.maple.javase.reflection.accessible;
 import java.lang.reflect.Constructor;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class AccessibleConstructor {
     public static void main (String[] args) throws Exception {

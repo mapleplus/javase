@@ -7,7 +7,7 @@ import java.net.Socket;
 import java.util.Scanner;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 下载文件 客户端
  **/
 public class DownloadClient {

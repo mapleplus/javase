@@ -3,7 +3,7 @@ package com.maple.project.movie;
 import java.util.Scanner;
 
 /**
- * @author FENGXIN
+ * @author maple
  */
 public class Application {
     public static void main(String[] args) {

@@ -4,7 +4,7 @@ import java.io.Serial;
 import java.io.Serializable;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class Cat implements Serializable {
     private final String name;

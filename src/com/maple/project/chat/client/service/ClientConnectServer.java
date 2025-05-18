@@ -11,7 +11,7 @@ import java.net.Socket;
 import java.util.Date;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 客户端连接服务器端的相关操作
  **/
 public class ClientConnectServer {

@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 服务器验证客户端正确，一旦验证通过，那么之后的客户端请求都将在这里(该线程)处理，创建线程类包装socket 方便处理客户端的请求
  **/
 public class ServerConnectClientThread extends Thread

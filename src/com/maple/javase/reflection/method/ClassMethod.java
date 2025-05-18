@@ -8,7 +8,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 /**
- * @author FENGXIN
+ * @author maple
  * Class类的常用方法
  **/
 @SuppressWarnings ("all")

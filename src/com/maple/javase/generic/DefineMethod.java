@@ -1,7 +1,7 @@
 package com.maple.javase.generic;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class DefineMethod {
     public static void main (String[] args) {

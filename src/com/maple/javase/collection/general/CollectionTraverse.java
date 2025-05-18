@@ -5,8 +5,7 @@ import java.util.Collection;
 import java.util.Iterator;
 
 /**
- * @author FENGXIN
- * 遍历集合的代码示例
+ * @author maple
  **/
 public class CollectionTraverse {
     public static void main(String[] args) {

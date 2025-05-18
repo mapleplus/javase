@@ -5,7 +5,7 @@ import java.net.InetAddress;
 import java.net.Socket;
 
 /**
- * @author FENGXIN
+ * @author maple
  * TCP 文件上传 客户端
  **/
 public class UploadClient {

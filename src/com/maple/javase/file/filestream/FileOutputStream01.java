@@ -3,8 +3,8 @@ package com.maple.javase.file.filestream;
 import java.io.IOException;
 
 /**
- * @author FENGXIN
- * 文件输出流（FileOutputStream01）
+ * @author maple
+ * 文件输出流
  **/
 public class FileOutputStream01 {
     public static void main (String[] args) {

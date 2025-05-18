@@ -1,7 +1,7 @@
 package com.maple.javase.override;
 
 /**
- * @author FENGXIN
+ * @author maple
  */
 public class Person {
     private final String name;

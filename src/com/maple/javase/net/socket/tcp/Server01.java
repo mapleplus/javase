@@ -2,18 +2,19 @@ package com.maple.javase.net.socket.tcp;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 服务器端
- * 更新内容：增加服务器返回数据的接收，增加结束标志
  **/
-public class TCPServer02 {
+public class Server01 {
     public static void main (String[] args) throws IOException {
-        ServerSocket serverSocket = new ServerSocket (8888);
+        // 创建ServerSocket对象，指定端口号,服务端在9999端口监听
+        ServerSocket serverSocket = new ServerSocket (9999);
+        // 等待客户端连接，连接成功返回一个Socket对象
+        // accept()是一个阻塞方法，如果没有客户端连接，则一直等待
         Socket socket = serverSocket.accept ();
         // 获取输入流
         InputStream inputStream = socket.getInputStream ();
@@ -23,13 +24,6 @@ public class TCPServer02 {
         while ((len = inputStream.read (bytes)) != -1){
             System.out.println (new String (bytes, 0, len));
         }
-        // ----------------------------------------------------------------------
-        // 服务器端发送数据给客户端
-        OutputStream outputStream = socket.getOutputStream ();
-        outputStream.write ("Hello,client".getBytes ());
-        // 结束标志
-        socket.shutdownOutput ();
-        // ----------------------------------------------------------------------
         // 关闭资源
         inputStream.close ();
         socket.close ();

@@ -1,8 +1,7 @@
 package com.maple.algorithms.string;
 
 /**
- * @author FENGXIN
- * 力扣151
+ * @author maple
  **/
 public class ReverseWords {
     public static void main (String[] args) {

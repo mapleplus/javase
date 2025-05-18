@@ -1,7 +1,7 @@
 package com.maple.project.order;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class Person {
     protected String name;

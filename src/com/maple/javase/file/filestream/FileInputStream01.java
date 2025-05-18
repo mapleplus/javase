@@ -3,7 +3,7 @@ package com.maple.javase.file.filestream;
 import java.io.IOException;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 将文件内容读取到程序中，并在程序控制台中输出，使用Java中的FileInputStream类
  * read(byte[] bytes)：从输入流读取一个字节数组的数据，最多b.length字节，如果不够则读取实际字节，没有输入可用此方法将阻塞，读取到文件末尾返回-1
  * read和read(byte[] bytes)返回实际读取的字节数

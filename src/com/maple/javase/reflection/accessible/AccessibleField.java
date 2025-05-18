@@ -3,7 +3,7 @@ package com.maple.javase.reflection.accessible;
 import java.lang.reflect.Field;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class AccessibleField {
     public static void main (String[] args) throws Exception {

@@ -4,7 +4,7 @@ import java.io.Serial;
 import java.io.Serializable;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 客户端消息类
  **/
 public class Message implements Serializable, MessageType {

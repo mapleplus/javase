@@ -1,7 +1,7 @@
 package com.maple.javase.interfaces;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class Polymorphic {
 

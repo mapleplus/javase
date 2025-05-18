@@ -4,9 +4,8 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
-
 public class CreateFile {
     public static void main (String[] args) {
         test1 ();

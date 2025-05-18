@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 本工具类用于将输入流转换为字节数组
  * 将输入流转换为字节数组
  **/

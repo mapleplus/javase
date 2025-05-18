@@ -1,7 +1,7 @@
 package com.maple.project.atm;
 
 /**
- * @author FENGXIN
+ * @author maple
  */
 public class Account {
     private String card;

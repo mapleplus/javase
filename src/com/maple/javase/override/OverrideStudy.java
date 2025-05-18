@@ -1,7 +1,7 @@
 package com.maple.javase.override;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 理解重写及super的注意事项
  */
 public class OverrideStudy {

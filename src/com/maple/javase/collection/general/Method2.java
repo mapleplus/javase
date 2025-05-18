@@ -3,7 +3,7 @@ package com.maple.javase.collection.general;
 import java.util.*;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class Method2 {
     public static void main (String[] args) {

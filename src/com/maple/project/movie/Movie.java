@@ -1,7 +1,7 @@
 package com.maple.project.movie;
 
 /**
- * @author FENGXIN
+ * @author maple
  */
 public class Movie {
     private int id;

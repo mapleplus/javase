@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * @author FENGXIN
+ * @author maple
  * 字符输入流
  **/
 public class FileReader01 {

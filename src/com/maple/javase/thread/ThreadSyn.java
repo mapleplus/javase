@@ -1,7 +1,7 @@
 package com.maple.javase.thread;
 
 /**
- * @author FENGXIN
+ * @author maple
  **/
 public class ThreadSyn {
     public static void main (String[] args) {
